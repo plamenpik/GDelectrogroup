@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ site.title }}</title>
+    <title>
+        {% if page.title %}
+        {{page.title}}
+        {% else %}
+        {{site.title}}
+        {% endif %}
+    </title>
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
 </head>
 <body>
-    {{content}}
+    <div class="site">
+        <header>
+            <a href="{{ site.baseurl }}/">
+                <h1>{{ site.title }}</h1>
+            </a>
+        </header>
+        <section>
+            <main>
+                {{content}}
+            </main>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
