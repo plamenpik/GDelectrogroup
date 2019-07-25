@@ -11,7 +11,7 @@ layout: main
     {% for page in site.pages %}
         {% if page.title %}    
         <li>
-            <a href="{{ page.url }}">                
+            <a href="{{ site.baseurl }}{{ page.url }}">                
                 {{ page.title }}
             </a>
         </li>
