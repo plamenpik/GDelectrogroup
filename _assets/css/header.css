@@ -1,0 +1,5 @@
+.site-header {
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('/images/header-background1.jpg') no-repeat center center;
+    background-size: 100% auto;
+    border-radius: 0.3em; 
+}
