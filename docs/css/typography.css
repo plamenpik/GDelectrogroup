@@ -11,3 +11,8 @@ html {
 li {
     list-style: none outside;
 }
+
+a {
+    text-decoration: none;
+    /* color: #7FBA00; */
+}
