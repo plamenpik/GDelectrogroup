@@ -1,5 +1,32 @@
 .site-header {
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('/images/header-background1.jpg') no-repeat center center;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('/header-background.jpg') no-repeat center center;
     background-size: 100% auto;
     border-radius: 0.3em; 
+}
+
+.about-us {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6em 0;
+}
+
+.about-us p {
+    font-style: italic;
+    font-size: 2em;
+}
+
+.about-us h1 {
+    text-transform: uppercase;
+    font-size: 2.6em;
+    padding: 1em 0;
+}
+
+.about-us a {
+    background: #FED136;
+    color: #FFFFFF;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* margin-top: 0.5em; */
 }
