@@ -16,6 +16,10 @@
     padding: 1em 0;
 }
 
+.link {
+    position: relative;
+}
+
 .link:before {
     display: inline-block;
     content: '';
@@ -24,6 +28,7 @@
     font-size: 1.5em;
     padding: 0 1em 1em 0;
     color: #FDC63C;
+    transform: translateX(30%)
 }
 
 .link.facebook:before { content: '\f09a'; }

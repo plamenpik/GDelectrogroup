@@ -2,6 +2,9 @@
     display: flex;
     padding: 1em 0.5em;
     align-items: center;
+    background: linear-gradient(0deg,rgba(255, 255, 255, 0.25),rgba(255, 255, 255, 0.25));
+    position: fixed;
+    width: 90%;
 }
 
 .site-navigation h1 {

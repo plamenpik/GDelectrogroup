@@ -5,14 +5,23 @@
 layout: main
 ---
 
-<ul>
-    {% for page in site.pages %}
-        {% if page.title %}    
+<section class="site-services">
+    <header>
+        <h2>Нашите услуги</h2>
+        <p>Винаги изпълнени в срок и с професионализъм.</p>
+    </header>
+    <ul class="services">
         <li>
-            <a href="{{ site.baseurl }}{{ page.url }}">                
-                {{ page.title }}
-            </a>
+            <h3>Монтаж на осветление</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ad ducimus corporis, repellat earum dolorum animi distinctio et hic quasi. Earum saepe molestias, est sed quia expedita totam tempore odit!</p>
         </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+        <li>
+            <h3>Изграждане на ел. инсталации</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit itaque quis aliquid eius aperiam reiciendis quasi sequi amet modi. Rem similique, dicta in reiciendis quas animi dolorem itaque saepe sed.</p>
+        </li>
+        <li>
+            <h3>Монтаж на коледна украса</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eligendi quis minima. Modi commodi explicabo nostrum ea velit, cupiditate architecto non expedita, quos, tempore reprehenderit esse debitis dolorum eos illo!</p>
+        </li>
+    </ul>
+</section>

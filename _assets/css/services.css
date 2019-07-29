@@ -1,0 +1,17 @@
+.site-services {
+    text-align: center;
+    widows: 90%;
+}
+
+.site-services header {
+    padding: 5em 0 3em;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services li {
+    flex: 0 0 30%;
+}
