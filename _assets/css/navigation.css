@@ -2,23 +2,25 @@
     display: flex;
     padding: 1em 0.5em;
     align-items: center;
-    background: linear-gradient(0deg,rgba(255, 255, 255, 0.25),rgba(255, 255, 255, 0.25));
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30));
     position: fixed;
     width: 90%;
 }
 
-.site-navigation h1 {
+.site-navigation h2 {
     padding-left: 0.4em;
-    padding: 0.5em;
+    margin-bottom: 0;
+    /* padding: 0.5em; */
 }
 
-.site-navigation h1 a {
+.site-navigation h2 a {
     color: #FED136;
 }
 
 .navigation-links {
     display: flex;
     margin-left: auto;
+    padding-bottom: 0;
 }
 
 .navigation-links li {

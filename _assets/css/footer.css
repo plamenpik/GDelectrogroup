@@ -10,14 +10,12 @@
 .footer-links {
     display: flex;
     justify-content: center;
+    padding-bottom: 0;
+
 }
 
 .site-footer p {
     padding: 1em 0;
-}
-
-.link {
-    position: relative;
 }
 
 .link:before {
@@ -28,7 +26,7 @@
     font-size: 1.5em;
     padding: 0 1em 1em 0;
     color: #FDC63C;
-    transform: translateX(30%)
+    transform: translateX(26%)
 }
 
 .link.facebook:before { content: '\f09a'; }
