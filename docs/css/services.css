@@ -16,3 +16,16 @@
 .services li {
     flex: 0 0 30%;
 }
+
+.services li:before {
+    display: block;
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    font-size: 5em;
+    color: #FED136;
+}
+
+.services li:nth-child(1):before { content: '\f0eb';}
+.services li:nth-child(2):before { content: '\f0e7';}
+.services li:nth-child(3):before { content: '\f005';}
