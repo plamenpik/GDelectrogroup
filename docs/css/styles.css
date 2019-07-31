@@ -99,8 +99,8 @@ body {
   opacity: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-images/lights.jpg") no-repeat center center;
   background-size: cover;
-  -webkit-animation: fadeIn 5s linear;
-          animation: fadeIn 5s linear;
+  -webkit-animation: fadeIn 7s linear;
+          animation: fadeIn 7s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
@@ -110,8 +110,8 @@ body {
   opacity: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-images/el.jpg") no-repeat center center;
   background-size: cover;
-  -webkit-animation: fadeIn 5s linear 5s;
-          animation: fadeIn 5s linear 5s;
+  -webkit-animation: fadeIn 7s linear 7s;
+          animation: fadeIn 7s linear 7s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
@@ -121,8 +121,8 @@ body {
   opacity: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-images/christmas.jpg") no-repeat center center;
   background-size: cover;
-  -webkit-animation: fadeIn 5s linear 10s;
-          animation: fadeIn 5s linear 10s;
+  -webkit-animation: fadeIn 7s linear 14s;
+          animation: fadeIn 7s linear 14s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
