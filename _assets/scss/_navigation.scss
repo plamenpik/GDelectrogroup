@@ -5,31 +5,30 @@
     background: linear-gradient(0deg,rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30));
     position: fixed;
     width: 90%;
-}
 
-.site-navigation h2 {
-    padding-left: 0.4em;
-    margin-bottom: 0;
-    /* padding: 0.5em; */
-}
+    & h2 {
+        padding-left: 0.4em;
+        margin-bottom: 0;
 
-.site-navigation h2 a {
-    color: #FED136;
-}
+        & a {
+            color: #FED136;
+        }
+    }
 
-.navigation-links {
-    display: flex;
-    margin-left: auto;
-    padding-bottom: 0;
-}
+    .navigation-links {
+        display: flex;
+        margin-left: auto;
+        padding-bottom: 0;
 
-.navigation-links li {
-    padding: 0 0.5em;
-}
+        & li {
+            padding: 0 0.5em;
+        }
 
-.navigation-links a {
-    border: 1px solid #000;
-    border-radius: 0.3em; 
-    padding: 0.5em;
-    color: #FFFFFF;
+        & a {
+            border: 1px solid #000;
+            border-radius: 0.3em; 
+            padding: 0.5em;
+            color: #FFFFFF;
+        }
+    }
 }

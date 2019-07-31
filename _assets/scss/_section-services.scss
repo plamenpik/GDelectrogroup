@@ -1,0 +1,32 @@
+.site-services {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+
+    & header {
+        padding: 5em 0 3em;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-between;
+
+        & li {
+            flex: 0 0 30%;
+        }
+
+        & li:before {
+            display: block;
+            content: '';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+            font-size: 5em;
+            color: #FED136;
+        }
+
+        & li:nth-child(1):before { content: '\f0eb';}
+        & li:nth-child(2):before { content: '\f0e7';}
+        & li:nth-child(3):before { content: '\f005';}
+    }
+}
+

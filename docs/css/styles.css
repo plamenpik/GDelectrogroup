@@ -86,28 +86,22 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   position: fixed;
   width: 90%; }
-
-.site-navigation h2 {
-  padding-left: 0.4em;
-  margin-bottom: 0;
-  /* padding: 0.5em; */ }
-
-.site-navigation h2 a {
-  color: #FED136; }
-
-.navigation-links {
-  display: flex;
-  margin-left: auto;
-  padding-bottom: 0; }
-
-.navigation-links li {
-  padding: 0 0.5em; }
-
-.navigation-links a {
-  border: 1px solid #000;
-  border-radius: 0.3em;
-  padding: 0.5em;
-  color: #FFFFFF; }
+  .site-navigation h2 {
+    padding-left: 0.4em;
+    margin-bottom: 0; }
+    .site-navigation h2 a {
+      color: #FED136; }
+  .site-navigation .navigation-links {
+    display: flex;
+    margin-left: auto;
+    padding-bottom: 0; }
+    .site-navigation .navigation-links li {
+      padding: 0 0.5em; }
+    .site-navigation .navigation-links a {
+      border: 1px solid #000;
+      border-radius: 0.3em;
+      padding: 0.5em;
+      color: #FFFFFF; }
 
 .site-footer {
   padding-top: 0.5em;
@@ -116,62 +110,49 @@ body {
   color: #646464;
   margin-top: 0.5em;
   border-radius: 0.3em; }
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 0; }
-
-.site-footer p {
-  padding: 1em 0; }
-
-.link:before {
-  display: inline-block;
-  content: '';
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: bold;
-  font-size: 1.5em;
-  padding: 0 1em 1em 0;
-  color: #FDC63C;
-  transform: translateX(26%); }
-
-.link.facebook:before {
-  content: '\f09a'; }
-
-.link.instagram:before {
-  content: '\f16d'; }
-
-.link.github:before {
-  content: '\f09b'; }
+  .site-footer p {
+    padding: 1em 0; }
+  .site-footer .footer-links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0; }
+  .site-footer .link:before {
+    display: inline-block;
+    content: '';
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0 1em 1em 0;
+    color: #FDC63C;
+    transform: translateX(26%); }
+  .site-footer .link.facebook:before {
+    content: '\f09a'; }
+  .site-footer .link.instagram:before {
+    content: '\f16d'; }
+  .site-footer .link.github:before {
+    content: '\f09b'; }
 
 .site-services {
   text-align: center;
   width: 90%;
   margin: 0 auto; }
-
-.site-services header {
-  padding: 5em 0 3em; }
-
-.services {
-  display: flex;
-  justify-content: space-between; }
-
-.services li {
-  flex: 0 0 30%; }
-
-.services li:before {
-  display: block;
-  content: '';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: bold;
-  font-size: 5em;
-  color: #FED136; }
-
-.services li:nth-child(1):before {
-  content: '\f0eb'; }
-
-.services li:nth-child(2):before {
-  content: '\f0e7'; }
-
-.services li:nth-child(3):before {
-  content: '\f005'; }
+  .site-services header {
+    padding: 5em 0 3em; }
+  .site-services .services {
+    display: flex;
+    justify-content: space-between; }
+    .site-services .services li {
+      flex: 0 0 30%; }
+    .site-services .services li:before {
+      display: block;
+      content: '';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: bold;
+      font-size: 5em;
+      color: #FED136; }
+    .site-services .services li:nth-child(1):before {
+      content: '\f0eb'; }
+    .site-services .services li:nth-child(2):before {
+      content: '\f0e7'; }
+    .site-services .services li:nth-child(3):before {
+      content: '\f005'; }
