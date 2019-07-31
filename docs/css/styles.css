@@ -1,12 +1,177 @@
-@import url('variables.css');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap");
+:root {
+  --font-family-content: 'PT Sans', sans-serif;
+  --font-family-headings: 'PT Serif', serif; }
 
-@import url('typography.css');
+*, *:after, *:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
 
-@import url('layout.css');
+html {
+  font: 16px/1.5 'Roboto', sans-serif;
+  box-sizing: border-box; }
 
-@import url('header.css');
-@import url('navigation.css');
-@import url('footer.css');
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: normal; }
 
-@import url('services.css');
+h1 {
+  font-size: 2.6em; }
 
+h2 {
+  font-size: 2.0em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1.0em; }
+
+li {
+  list-style: none outside; }
+
+a {
+  text-decoration: none;
+  /* color: #7FBA00; */ }
+
+p, ul, ol {
+  padding-bottom: 1.5em; }
+
+body {
+  background: #E4E4E4; }
+
+.site {
+  max-width: 90%;
+  margin: 0em auto; }
+
+.site-header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-bgrd.jpg") no-repeat center top;
+  background-size: cover;
+  border-radius: 0.3em; }
+
+.about-us {
+  text-align: center;
+  color: #FFFFFF;
+  padding: 6em 0 4em; }
+
+.about-us p {
+  font-style: italic;
+  font-size: 2em;
+  padding-bottom: 0; }
+
+.about-us h1 {
+  text-transform: uppercase;
+  padding: 1em 0; }
+
+.about-us a {
+  background: #FED136;
+  color: #FFFFFF;
+  padding: 0.7em;
+  border-radius: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+.site-navigation {
+  display: flex;
+  padding: 1em 0.5em;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  position: fixed;
+  width: 90%; }
+
+.site-navigation h2 {
+  padding-left: 0.4em;
+  margin-bottom: 0;
+  /* padding: 0.5em; */ }
+
+.site-navigation h2 a {
+  color: #FED136; }
+
+.navigation-links {
+  display: flex;
+  margin-left: auto;
+  padding-bottom: 0; }
+
+.navigation-links li {
+  padding: 0 0.5em; }
+
+.navigation-links a {
+  border: 1px solid #000;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  color: #FFFFFF; }
+
+.site-footer {
+  padding-top: 0.5em;
+  text-align: center;
+  background: #222222;
+  color: #646464;
+  margin-top: 0.5em;
+  border-radius: 0.3em; }
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0; }
+
+.site-footer p {
+  padding: 1em 0; }
+
+.link:before {
+  display: inline-block;
+  content: '';
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0 1em 1em 0;
+  color: #FDC63C;
+  transform: translateX(26%); }
+
+.link.facebook:before {
+  content: '\f09a'; }
+
+.link.instagram:before {
+  content: '\f16d'; }
+
+.link.github:before {
+  content: '\f09b'; }
+
+.site-services {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto; }
+
+.site-services header {
+  padding: 5em 0 3em; }
+
+.services {
+  display: flex;
+  justify-content: space-between; }
+
+.services li {
+  flex: 0 0 30%; }
+
+.services li:before {
+  display: block;
+  content: '';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  font-size: 5em;
+  color: #FED136; }
+
+.services li:nth-child(1):before {
+  content: '\f0eb'; }
+
+.services li:nth-child(2):before {
+  content: '\f0e7'; }
+
+.services li:nth-child(3):before {
+  content: '\f005'; }
