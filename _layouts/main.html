@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +15,22 @@
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    <script src="{{ site.baseurl }}/scripts/header.js"></script>
 </head>
-<body>
-    <div class="site">    
+
+<body onload="classChanger();">
+    <div class="site">
         <header class="site-header">
             {% include navigation.html %}
-            <section class="about-us">
-                <p>Добре дошли при нас!</p>
-                <h1>за нас е чест да се запознаем</h1>
-                <a href="#">Повече</a>
+            <section id="header-images">
+                <a href="#">
+                    <span id="header-text"></span>
+                </a>
+                <div class="switcher">
+                    <a href="javascript:switchImage(0)"><i class="fas fa-lightbulb"></i></a>
+                    <a href="javascript:switchImage(1)"><i class="fas fa-bolt"></i></a>
+                    <a href="javascript:switchImage(2)"><i class="far fa-star"></i></a>
+                </div>
             </section>
         </header>
         <section>
@@ -35,4 +43,5 @@
         </footer>
     </div>
 </body>
+
 </html>

@@ -53,31 +53,100 @@ body {
   margin: 0em auto; }
 
 .site-header {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-bgrd.jpg") no-repeat center top;
-  background-size: cover;
   border-radius: 0.3em; }
 
-.about-us {
+#header-images {
+  position: relative; }
+  #header-images:before {
+    display: block;
+    content: '';
+    padding-top: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+#header-text {
+  width: 60%;
   text-align: center;
-  color: #FFFFFF;
-  padding: 6em 0 4em; }
-
-.about-us p {
-  font-style: italic;
-  font-size: 2em;
-  padding-bottom: 0; }
-
-.about-us h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-transform: uppercase;
-  padding: 1em 0; }
+  font-weight: 700;
+  padding: 1.5em;
+  background: #32334a96;
+  color: #ffffff; }
+  #header-text:hover {
+    padding: 1.8em;
+    cursor: -webkit-grab;
+    cursor: grab; }
 
-.about-us a {
-  background: #FED136;
-  color: #FFFFFF;
-  padding: 0.7em;
-  border-radius: 0.3em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; }
+.switcher {
+  background: #32334a96;
+  text-align: center;
+  padding: 1em 0;
+  transform: translateY(-100%); }
+  .switcher a {
+    padding: 0.5em 2em;
+    color: #ffffff; }
+    .switcher a:hover {
+      outline: 1px solid #ffffff;
+      color: #FDC63C; }
+
+.image-one:before {
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-images/lights.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-animation: fadeIn 5s linear;
+          animation: fadeIn 5s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+.image-two:before {
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-images/el.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-animation: fadeIn 5s linear 5s;
+          animation: fadeIn 5s linear 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+.image-three:before {
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../images/header-images/christmas.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-animation: fadeIn 5s linear 10s;
+          animation: fadeIn 5s linear 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0.99; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0.99; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .site-navigation {
   display: flex;
@@ -85,7 +154,8 @@ body {
   align-items: center;
   background: #006838;
   position: fixed;
-  width: 90%; }
+  width: 90%;
+  z-index: 1; }
   .site-navigation .site-logo {
     position: relative; }
     .site-navigation .site-logo img {

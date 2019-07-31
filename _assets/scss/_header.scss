@@ -1,32 +1,95 @@
 .site-header {
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-bgrd.jpg') no-repeat center top;
-    background-size: cover;
     border-radius: 0.3em; 
-    // height: 65vh;
 }
 
-.about-us {
+#header-images {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: '';
+        padding-top: 50%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+#header-text {
+    width: 60%;
     text-align: center;
-    color: #FFFFFF;
-    padding: 6em 0 4em;
-}
-
-.about-us p {
-    font-style: italic;
-    font-size: 2em;
-    padding-bottom: 0;
-}
-
-.about-us h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
+    font-weight: 700;
+    padding: 1.5em;
+    background: #32334a96;
+    color: #ffffff;
+
+    &:hover {
+        padding: 1.8em;
+        cursor: grab;
+    }
+}
+
+.switcher {
+    background: #32334a96;
+    text-align: center;
     padding: 1em 0;
+    transform: translateY(-100%);
+
+    & a {
+        padding: 0.5em 2em;
+        color: #ffffff;
+
+        &:hover {
+            outline: 1px solid #ffffff;
+            color: #FDC63C;
+        }
+    }            
 }
 
-.about-us a {
-    background: #FED136;
-    color: #FFFFFF;
-    padding: 0.7em;
-    border-radius: 0.3em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.image-one:before {
+    opacity: 0;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-images/lights.jpg')no-repeat center center;
+    background-size: cover; 
+    animation: fadeIn 5s linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.image-two:before {
+    opacity: 0;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-images/el.jpg')no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 5s linear 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.image-three:before {
+    opacity: 0;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-images/christmas.jpg')no-repeat center center;
+    background-size: cover;
+    animation: fadeIn 5s linear 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.99;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

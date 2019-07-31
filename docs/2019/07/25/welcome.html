@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,14 @@
     <link rel="shortcut icon" type="image/png" href="/GDelectrogroup/favicon.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="/GDelectrogroup/css/styles.css">
+    <script src="/GDelectrogroup/scripts/header.js"></script>
 </head>
-<body>
-    <div class="site">    
+
+<body onload="classChanger();">
+    <div class="site">
         <header class="site-header">
             <nav class="site-navigation">
-    <a class="site-logo" href="/GDelectrogroup/"><img src="../images/site-logo.jpg" alt="Site-logo"></a>
+    <a class="site-logo" href="/GDelectrogroup/"><img src="/GDelectrogroup/images/site-logo.jpg" alt="Site-logo"></a>
     <ul class="navigation-links">
         <li><a href="#">Услуги</a></li>
         <li><a href="#">Портфолио</a></li>
@@ -26,10 +29,15 @@
         <li><a href="#">Контакти</a></li>
     </ul>
 </nav>
-            <section class="about-us">
-                <p>Добре дошли при нас!</p>
-                <h1>за нас е чест да се запознаем</h1>
-                <a href="#">Повече</a>
+            <section id="header-images">
+                <a href="#">
+                    <span id="header-text"></span>
+                </a>
+                <div class="switcher">
+                    <a href="javascript:switchImage(0)"><i class="fas fa-lightbulb"></i></a>
+                    <a href="javascript:switchImage(1)"><i class="fas fa-bolt"></i></a>
+                    <a href="javascript:switchImage(2)"><i class="far fa-star"></i></a>
+                </div>
             </section>
         </header>
         <section>
@@ -47,4 +55,5 @@
         </footer>
     </div>
 </body>
+
 </html>
