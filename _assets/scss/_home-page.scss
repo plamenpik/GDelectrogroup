@@ -7,8 +7,14 @@
         text-align: center;
     }
 
-    & li {
-        list-style: disc;
+    & li:before {
+        display: inline-block;
+        content: '\f0a9';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: bold;
+        color: #006838;
+        padding-right: 0.5em;
+       
     }
 
     & img {

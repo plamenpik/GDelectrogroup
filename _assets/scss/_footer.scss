@@ -22,10 +22,18 @@
         font-weight: bold;
         font-size: 1.5em;
         padding: 0 1em 1em 0;
-        color: #FDC63C;
+        color: #FFFFFF;
     }
 
-    .link.facebook:before { content: '\f09a'; }
-    .link.instagram:before { content: '\f16d'; }
+    .link.facebook:before { 
+        content: '\f09a'; 
+        color: #23AAF2;
+    }
+
+    .link.instagram:before { 
+        content: '\f16d'; 
+        color: #FFAB4C;
+    }
+
     .link.github:before { content: '\f09b'; }
 }

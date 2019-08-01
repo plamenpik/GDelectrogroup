@@ -207,11 +207,13 @@ body {
     font-weight: bold;
     font-size: 1.5em;
     padding: 0 1em 1em 0;
-    color: #FDC63C; }
+    color: #FFFFFF; }
   .site-footer .link.facebook:before {
-    content: '\f09a'; }
+    content: '\f09a';
+    color: #23AAF2; }
   .site-footer .link.instagram:before {
-    content: '\f16d'; }
+    content: '\f16d';
+    color: #FFAB4C; }
   .site-footer .link.github:before {
     content: '\f09b'; }
 
@@ -221,8 +223,13 @@ body {
   padding: 4em 0 3em; }
   .site-about-us h1 {
     text-align: center; }
-  .site-about-us li {
-    list-style: disc; }
+  .site-about-us li:before {
+    display: inline-block;
+    content: '\f0a9';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: bold;
+    color: #006838;
+    padding-right: 0.5em; }
   .site-about-us img {
     float: right;
     margin-left: 1em;
