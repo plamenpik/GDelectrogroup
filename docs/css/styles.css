@@ -195,7 +195,7 @@ body {
   color: #222225;
   border-radius: 0.3em; }
   .site-footer p {
-    padding: 1em 0; }
+    padding: 1em 0.5em; }
   .site-footer .footer-links {
     display: flex;
     justify-content: center;
@@ -207,8 +207,7 @@ body {
     font-weight: bold;
     font-size: 1.5em;
     padding: 0 1em 1em 0;
-    color: #FDC63C;
-    transform: translateX(26%); }
+    color: #FDC63C; }
   .site-footer .link.facebook:before {
     content: '\f09a'; }
   .site-footer .link.instagram:before {
@@ -216,15 +215,32 @@ body {
   .site-footer .link.github:before {
     content: '\f09b'; }
 
+.site-about-us {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4em 0 3em; }
+  .site-about-us h1 {
+    text-align: center; }
+  .site-about-us li {
+    list-style: disc; }
+  .site-about-us img {
+    float: right;
+    margin-left: 1em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 104, 56, 0.85); }
+  .site-about-us .image-left {
+    float: left;
+    margin-right: 1em; }
+
 .site-services {
   text-align: center;
   width: 90%;
   margin: 0 auto; }
   .site-services header {
-    padding: 5em 0 3em; }
+    padding: 4em 0 3em; }
   .site-services .services {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-left: 0; }
     .site-services .services li {
       flex: 0 0 30%; }
     .site-services .services li:before {
