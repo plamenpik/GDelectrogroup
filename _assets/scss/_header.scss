@@ -1,5 +1,5 @@
 .site-header {
-    border-radius: 0.3em; 
+    border-radius: var(--sections-border-radius); 
     overflow: hidden;
 }
 
@@ -28,7 +28,7 @@
     padding: 1.5em;
     background: linear-gradient(0deg,rgba(50, 51, 74, 0.6), rgba(50, 51, 74, 0.6));
     color: #FFFFFF;
-    border-radius: 0.3em; 
+    border-radius: var(--sections-border-radius); 
 
     &:hover {
         padding: 1.8em;
@@ -42,7 +42,7 @@
     background: linear-gradient(0deg,rgba(50, 51, 74, 0.6), rgba(50, 51, 74, 0.6));
     text-align: center;
     padding: 1em 0;
-    border-radius: 0.3em; 
+    border-radius: var(--sections-border-radius); 
 
     & a {
         padding: 0.5em 2em;

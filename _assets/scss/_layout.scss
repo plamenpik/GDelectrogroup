@@ -6,3 +6,9 @@ body {
     max-width: 90%;
     margin: 0em auto;
 }
+
+@media (max-width: 1024px) {
+    .site {
+        max-width: 100%;        
+    }
+}

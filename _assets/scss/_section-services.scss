@@ -9,11 +9,15 @@
 
     .services {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-left: 0;
 
         & li {
             flex: 0 0 30%;
+            @media (max-width: 800px) {
+                flex: 0 0 100%;
+            }
         }
 
         & li:before {
@@ -27,7 +31,7 @@
 
         & li:nth-child(1):before { content: '\f0eb';}
         & li:nth-child(2):before { content: '\f0e7';}
-        & li:nth-child(3):before { content: '\f005';}
-    }
+        & li:nth-child(3):before { content: '\f005';}        
+    }    
 }
 

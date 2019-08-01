@@ -3,7 +3,7 @@
     text-align: center;
     background: #666666;
     color: #222225;
-    border-radius: 0.3em;
+    border-radius: var(--sections-border-radius);
 
     & p {
         padding: 1em 0.5em;
