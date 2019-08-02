@@ -5,6 +5,10 @@
 
     & header {
         padding: 4em 0 3em;
+
+        & p {
+            font-style: italic;
+        }
     }
 
     .services {
@@ -12,9 +16,18 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-left: 0;
-
+        
         & li {
-            flex: 0 0 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex: 0 0 32%;
+            padding: 0.5em 0.5em;
+            margin: 0.5em 0;
+            border: 2px solid rgba(0, 104, 56, 0.6);
+            border-radius: var(--sections-border-radius);
+
             @media (max-width: 800px) {
                 flex: 0 0 100%;
             }
@@ -30,8 +43,16 @@
         }
 
         & li:nth-child(1):before { content: '\f0eb';}
-        & li:nth-child(2):before { content: '\f0e7';}
-        & li:nth-child(3):before { content: '\f005';}        
+
+        & li:nth-child(2):before { 
+            content: '\f0e7';
+            color: #ED1B24;
+        }
+
+        & li:nth-child(3):before { 
+            content: '\f005';
+            color: #00A4EF;
+        }        
     }    
 }
 
