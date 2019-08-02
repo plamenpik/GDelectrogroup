@@ -7,6 +7,13 @@
 
         & p {
             font-style: italic;
+
+            &:after {
+                display: block;
+                content: '';
+                border: 1px solid #7A7A7A;
+                margin-top: 1em;
+            }
         }
     }
 

@@ -2,6 +2,9 @@
 :root {
   --font-family-content: 'Fira Sans', sans-serif;
   --font-family-headings: 'Merriweather', serif;
+  --font-family-large: 18px;
+  --font-family-desktop: 16px;
+  --font-family-mobile: 14px;
   --sections-border-radius: 0.3em; }
 
 *, *:after, *:before {
@@ -10,8 +13,14 @@
   box-sizing: inherit; }
 
 html {
-  font: 16px/1.5 var(--font-family-content, sans-serif);
+  font: var(--font-family-desktop)/1.5 var(--font-family-content, sans-serif);
   box-sizing: border-box; }
+  @media (min-width: 1600px) {
+    html {
+      font-size: var(--font-family-large); } }
+  @media (max-width: 1024px) {
+    html {
+      font-size: var(--font-family-mobile); } }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
@@ -154,7 +163,7 @@ body {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
-  30% {
+  10% {
     opacity: 0.99; }
   90% {
     opacity: 1; }
@@ -164,7 +173,7 @@ body {
 @keyframes fadeIn {
   0% {
     opacity: 0; }
-  30% {
+  10% {
     opacity: 0.99; }
   90% {
     opacity: 1; }
@@ -337,6 +346,11 @@ body {
     text-align: center; }
     .site-portfolio header p {
       font-style: italic; }
+      .site-portfolio header p:after {
+        display: block;
+        content: '';
+        border: 1px solid #7A7A7A;
+        margin-top: 1em; }
   .site-portfolio .portfolio-gallery {
     padding: 2em 0;
     display: grid;
@@ -403,3 +417,33 @@ body {
         .site-portfolio .portfolio-gallery .image.huge {
           grid-column: span 2;
           grid-row: span 2; } }
+
+.site-about {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto; }
+  .site-about header {
+    padding: 4em 0 3em; }
+    .site-about header p {
+      font-style: italic; }
+      .site-about header p:after {
+        display: block;
+        content: '';
+        border: 1px solid #7A7A7A;
+        margin-top: 1em; }
+    .site-about header h4 {
+      font-weight: bold; }
+  .site-about .about {
+    width: 50%;
+    padding-left: 0;
+    text-align: right; }
+    .site-about .about li {
+      padding: 0 2em; }
+      .site-about .about li:nth-child(odd) {
+        transform: translateX(99.7%);
+        text-align: left;
+        border-left: 1px solid #7A7A7A; }
+      .site-about .about li:nth-child(even) {
+        border-right: 1px solid #7A7A7A; }
+    .site-about .about h5 {
+      font-weight: bold; }

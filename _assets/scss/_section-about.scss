@@ -1,0 +1,49 @@
+.site-about {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    
+    & header {
+        padding: 4em 0 3em;
+
+        & p {
+            font-style: italic;
+
+            &:after {
+                display: block;
+                content: '';
+                border: 1px solid #7A7A7A;
+                margin-top: 1em;
+            }
+        }
+
+        & h4 {
+            font-weight: bold;
+        }
+    }
+
+    .about {
+        width: 50%;
+        padding-left: 0;
+        text-align: right;
+
+        
+        & li {
+            padding: 0 2em;
+            
+            &:nth-child(odd) {
+                transform: translateX(99.7%);
+                text-align: left;
+                border-left: 1px solid #7A7A7A;
+            }
+
+            &:nth-child(even) {
+                border-right: 1px solid #7A7A7A;
+            }
+        }
+
+        & h5 {
+            font-weight: bold;
+        }
+    }
+}

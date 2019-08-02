@@ -5,8 +5,16 @@
 }
 
 html {
-    font: 16px/1.5 var(--font-family-content, sans-serif);
-    box-sizing: border-box;    
+    font: var(--font-family-desktop)/1.5 var(--font-family-content, sans-serif);
+    box-sizing: border-box; 
+    
+    @media (min-width: 1600px) {
+        font-size: var(--font-family-large);
+    }
+    
+    @media (max-width: 1024px) {
+        font-size: var(--font-family-mobile);
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
