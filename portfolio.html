@@ -2,8 +2,119 @@
 title: Портфолио
 layout: portfolio
 permalink: /portfolio/
+gallery:
+  - caption: Text
+    file: images/portfolio-images/1.jpg
+    size: huge
+  - caption: Text
+    file: images/portfolio-images/2.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/3.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/4.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/5.jpg
+    size: huge
+  - caption: Text
+    file: images/portfolio-images/6.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/7.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/8.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/9.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/10.jpg
+    size: huge
+  - caption: Text
+    file: images/portfolio-images/11.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/12.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/13.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/14.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/6.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/15.jpg
+    size: huge
+  - caption: Text
+    file: images/portfolio-images/16.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/17.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/18.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/19.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/20.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/21.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/22.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/23.jpg
+    size: huge
+  - caption: Text
+    file: images/portfolio-images/24.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/25.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/26.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/27.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/28.jpg
+    size: small
+  - caption: Text
+    file: images/portfolio-images/29.jpg
+    size: big
+  - caption: Text
+    file: images/portfolio-images/30.jpg
+    size: small
+    
 ---
-<section style="padding-top: 5em;">
-    <h1>Портфолио</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, eveniet? Velit tempora doloremque, temporibus dolore distinctio, ipsum minus eligendi ex doloribus aliquam aspernatur blanditiis. Tempore odit perspiciatis eum exercitationem officiis.</p>
+<section class="site-portfolio">
+    <header>
+        <h2>Портфолио</h2>
+        <p>Разгледайте нашата визитка в снимки по долу</p>
+    </header>
+    <main>
+        <ul class="portfolio-gallery">
+                {% for item in page.gallery %}
+                <li class="image {{ item.size }}">
+                    <a href="{{ site.baseurl }}/{{ item.file }}">
+                        <img src="{{ site.baseurl }}/{{ item.file }}" alt="Portfolio picture">
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+    </main>
+    <footer>
+
+    </footer>
 </section>
