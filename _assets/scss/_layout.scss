@@ -3,12 +3,6 @@ body {
 }
 
 .site {
-    max-width: 90%;
+    max-width: 80rem;
     margin: 0em auto;
-}
-
-@media (max-width: 1024px) {
-    .site {
-        max-width: 100%;        
-    }
 }
