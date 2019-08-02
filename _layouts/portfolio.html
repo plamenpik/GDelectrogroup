@@ -5,14 +5,13 @@
     {% include head.html %}
 </head>
 
-<body onload="classChanger();">
+<body>
     <div class="site">
         <header class="site-header">
             {% include navigation.html %}
-            {% include header.html %}
         </header>
             <main>
-                {{ content }}
+                {{content}}
             </main>        
         <footer class="site-footer">
             {% include footer.html %}
