@@ -4,12 +4,12 @@
     padding-top: 0.5em;
     text-align: center;
     color: #7A7A7A;
-    border-radius: var(--sections-border-radius);
 
     &:before {
         display: block;
         content: '';
-        border: 1px solid #353535;
+        border-bottom: 1px solid #353535;
+        padding-top: 4.5em;
     }
 
     & p {
@@ -28,7 +28,7 @@
         content: '';
         font-family: 'Font Awesome 5 Brands';
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 2em;
         padding: 0 1em 1em 0;
         color: #353535;
     }

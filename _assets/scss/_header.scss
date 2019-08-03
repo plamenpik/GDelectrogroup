@@ -1,6 +1,6 @@
-.site-header {    
+.site-header {
     border-radius: var(--sections-border-radius); 
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 #header-images {
@@ -33,7 +33,7 @@
     border-radius: var(--sections-border-radius); 
 
     &:hover {
-        // padding: 1.8em;
+        padding: calc(1.5em + 3px);
         cursor: grab;
     }
 }

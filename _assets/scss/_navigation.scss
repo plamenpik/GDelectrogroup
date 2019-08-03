@@ -1,6 +1,6 @@
 .site-navigation {
     display: flex;
-    padding: 1em 0.5em;
+    padding: 1.3em 0.5em;
     align-items: center;
     background: #2e9eb7;
     border-radius: var(--sections-border-radius);
@@ -21,8 +21,9 @@
         
         & img {
             position: absolute;
-            transform: translateY(-29%);
+            transform: translateY(-35%);
             padding-left: 2em;
+            
         }
     }      
 
