@@ -16,6 +16,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-left: 0;
+        padding-bottom: 0;
         
         & li {
             display: flex;
@@ -23,8 +24,8 @@
             justify-content: space-between;
             align-items: center;
             flex: 0 0 32%;
-            padding: 0.5em 0.5em;
-            margin: 0.5em 0;
+            padding: 2.5em 1em;
+            margin: 1em 0;
             border: 2px solid rgba(0, 104, 56, 0.6);
             border-radius: var(--sections-border-radius);
 
