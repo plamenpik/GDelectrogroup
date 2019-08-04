@@ -192,7 +192,7 @@ body {
 
 .site-navigation {
   display: flex;
-  padding: 1.3em 0.5em;
+  padding: 0.3em 0;
   align-items: center;
   background: #2e9eb7;
   border-radius: var(--sections-border-radius);
@@ -200,17 +200,20 @@ body {
   top: 1em;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.95);
   width: 80rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000; }
   .site-navigation .site-logo {
-    position: relative; }
-    .site-navigation .site-logo:after {
-      display: inline-block;
-      content: '';
-      padding-left: calc(2em + 58px); }
+    position: relative;
+    width: 73px;
+    height: 73px;
+    margin-left: 2em; }
     .site-navigation .site-logo img {
       position: absolute;
-      transform: translateY(-35%);
-      padding-left: 2em; }
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%; }
   .site-navigation .navigation-links {
     display: flex;
     flex-wrap: wrap;
@@ -238,13 +241,13 @@ body {
       .site-navigation .navigation-links a:hover:after {
         width: 90%;
         transition: 0.3s ease all; }
-  @media (max-width: 1024px) {
+  @media (max-width: 1300px) {
     .site-navigation {
       width: 100%; } }
   @media (max-width: 800px) {
     .site-navigation {
       position: static;
-      width: 100%; }
+      transform: translateX(0); }
       .site-navigation .navigation-links {
         display: block; } }
 
@@ -432,8 +435,7 @@ body {
 .site-about {
   text-align: center;
   width: 90%;
-  margin: 0 auto;
-  padding-bottom: 3em; }
+  margin: 0 auto; }
   .site-about header {
     padding: 4em 0 3em; }
     .site-about header p {
@@ -459,21 +461,25 @@ body {
     padding-left: 0;
     text-align: right; }
     .site-about .about li {
-      padding: 0 3em; }
+      padding: 1em 3em; }
+      .site-about .about li:last-child {
+        padding: 0 3em; }
       .site-about .about li:nth-child(odd) {
         padding-right: 0;
         transform: translateX(100%);
         text-align: left; }
       .site-about .about li:nth-child(even) {
         padding-left: 0; }
-        .site-about .about li:nth-child(even) img {
-          transform: translate(10%, 45%); }
-      .site-about .about li:last-child img {
-        transform: translateX(-110%); }
-      .site-about .about li img {
+      .site-about .about li:before {
+        display: inline-block;
+        content: '';
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background: #006838;
         position: absolute;
-        transform: translate(-110%, 45%);
-        box-shadow: 0px 0px 10px 0px black inset;
-        border-radius: 50%; }
-    .site-about .about h5 {
+        transform: translate(150%, 25%); }
+      .site-about .about li:nth-child(odd):before {
+        transform: translate(-250%, 25%); }
+    .site-about .about h4 {
       font-weight: bold; }
