@@ -251,7 +251,7 @@ body {
       width: 100%;
       transform: translateX(0); }
       .site-navigation .navigation-links {
-        display: none; } }
+        display: block; } }
 
 .site-footer {
   width: 95%;
