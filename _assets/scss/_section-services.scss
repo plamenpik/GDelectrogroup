@@ -29,7 +29,11 @@
             border: 2px solid rgba(0, 104, 56, 0.6);
             border-radius: var(--sections-border-radius);
 
-            @media (max-width: 800px) {
+            @media (max-width: 1024px) {
+                flex: 0 0 48%;
+            }
+
+            @media (max-width: 600px) {
                 flex: 0 0 100%;
             }
         }
@@ -53,7 +57,11 @@
         & li:nth-child(3):before { 
             content: '\f005';
             color: #00A4EF;
-        }        
+        }  
+        
+        & li:nth-child(4):before { content: '\f044';}
+        & li:nth-child(5):before { content: '\f676';}
+        & li:nth-child(6):before { content: '\f2a0';}
     }    
 }
 

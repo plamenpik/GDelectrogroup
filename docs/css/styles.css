@@ -182,12 +182,12 @@ body {
 
 @media (max-width: 800px) {
   #header-text {
-    padding: 0.5em;
+    padding: 0.8em;
     font-size: 0.8em; }
   .switcher {
-    padding: 0.4em 0; }
+    padding: 0.5em 0; }
     .switcher a {
-      padding: 0.3em 1em; }
+      padding: 0.4em 1em; }
     .switcher i {
       font-size: 0.8em; } }
 
@@ -278,7 +278,8 @@ body {
     font-weight: bold;
     font-size: 2em;
     padding: 0 1em 1em 0;
-    color: #353535; }
+    color: #353535;
+    transform: translateX(25%); }
   .site-footer .link.facebook:before {
     content: '\f09a'; }
   .site-footer .link.facebook:hover:before {
@@ -337,7 +338,10 @@ body {
       margin: 1em 0;
       border: 2px solid rgba(0, 104, 56, 0.6);
       border-radius: var(--sections-border-radius); }
-      @media (max-width: 800px) {
+      @media (max-width: 1024px) {
+        .site-services .services li {
+          flex: 0 0 48%; } }
+      @media (max-width: 600px) {
         .site-services .services li {
           flex: 0 0 100%; } }
     .site-services .services li:before {
@@ -355,6 +359,12 @@ body {
     .site-services .services li:nth-child(3):before {
       content: '\f005';
       color: #00A4EF; }
+    .site-services .services li:nth-child(4):before {
+      content: '\f044'; }
+    .site-services .services li:nth-child(5):before {
+      content: '\f676'; }
+    .site-services .services li:nth-child(6):before {
+      content: '\f2a0'; }
 
 .site-portfolio {
   width: 90%;
