@@ -22,6 +22,9 @@ html {
     html {
       font-size: var(--font-family-mobile); } }
 
+body, table, form, select, option, input, textarea {
+  font: inherit; }
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
   font-family: var(--font-family-headings, serif);
@@ -573,3 +576,56 @@ body {
       left: 0%;
       transform: translateY(-50%);
       z-index: 1; }
+
+.site-contacts {
+  width: 90%;
+  margin: 0 auto; }
+  .site-contacts header {
+    text-align: center;
+    padding: 4em 0 3em 0; }
+  .site-contacts .contacts-and-map {
+    display: flex;
+    padding: 1em 0 4em;
+    justify-content: space-around;
+    align-items: center; }
+    .site-contacts .contacts-and-map iframe {
+      border-radius: 0.5em; }
+    @media (max-width: 600px) {
+      .site-contacts .contacts-and-map {
+        display: block; }
+        .site-contacts .contacts-and-map iframe {
+          width: 300px;
+          height: 300px; } }
+  .site-contacts form {
+    width: 70%;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 2rem; }
+    .site-contacts form fieldset {
+      border: none; }
+    .site-contacts form input, .site-contacts form textarea {
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .site-contacts .contact-form input,
+  .site-contacts .contact-form textarea {
+    padding: 1.2rem;
+    display: block;
+    width: 100%;
+    margin-top: 1em; }
+  .site-contacts .contact-form legend {
+    font-size: 2rem; }
+  .site-contacts .contact-form textarea {
+    height: 13.65rem; }
+  .site-contacts .contact-form .button {
+    font-size: 1.6rem;
+    padding: 0.8rem; }
+  .site-contacts .contact-form .half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em; }
+  .site-contacts .contact-form .right {
+    width: 50%; }
+  .site-contacts .contact-form .left {
+    margin-right: 2%; }

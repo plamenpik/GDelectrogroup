@@ -17,6 +17,10 @@ html {
     }
 }
 
+body, table, form, select, option, input, textarea {
+    font: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
     font-family: var(--font-family-headings, serif);
@@ -38,7 +42,6 @@ li {
 a {
     text-decoration: none;
 }
-
 
 p, ul, ol {
     padding-bottom: 1.5em;
