@@ -35,6 +35,16 @@
         border: 1px solid #7A7A7A;
     }    
 
+    @media (max-width: 600px) {
+        .line {
+            display: none;
+        }
+
+        .about {
+            width: 100%;
+        }
+    }
+
     .about {
         width: 50%;
         padding-left: 0;
@@ -75,6 +85,42 @@
 
         & h4 {
             font-weight: bold;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .line {
+            display: none;
+        }
+        
+        .about {
+            width: 100%;
+            padding-bottom: 0;
+
+            & li:before {
+                display: none;
+            }
+
+            & li {
+                text-align: center;
+
+                &:nth-child(odd) {
+                    text-align: center;
+                    padding-left: 0;
+                    transform: translateX(0);
+                    border-bottom: 1px solid rgb(0, 104, 56);
+                }
+
+                &:nth-child(even) {
+                    padding-right: 0;
+                    border-bottom: 1px solid rgb(0, 104, 56);
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid transparent;
+                    padding-top: 1em;
+                }
+            }
         }
     }
 }

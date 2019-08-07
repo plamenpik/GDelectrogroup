@@ -8,6 +8,7 @@
     }
 
     .contacts-and-map {
+      text-align: center;
         display: flex;
         padding: 1em 0 4em;
         justify-content: space-around;
@@ -32,6 +33,10 @@
         text-align: center;
         margin: 1rem auto;
         padding: 2rem;
+
+        @media (max-width: 600px) {
+          width: 100%;
+        }
       
         fieldset {
           border: none;
@@ -79,6 +84,16 @@
     
         .left {
           margin-right: 2%;
-        }          
+        }  
+        
+        @media (max-width: 600px) {
+          .half {
+            width: 100%;
+          }
+
+          .left {
+            margin: 0;
+          }
+        }
     }    
 }
