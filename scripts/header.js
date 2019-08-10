@@ -7,6 +7,7 @@ const classArray = ["image-one", "image-two", "image-three"];
                 classCount = 0;
             }
             document.getElementById("header-images").classList = classArray[classCount];
+            document.getElementById("switcher").classList = classArray[classCount];
             document.getElementById("header-text").textContent = textArray[classCount];
             classCount++;
             setTimeout("classChanger()", 7000);
@@ -15,5 +16,6 @@ const classArray = ["image-one", "image-two", "image-three"];
         function switchImage(count) {
             classCount = count + 1;
             document.getElementById("header-images").classList = classArray[count];
+            document.getElementById("switcher").classList = classArray[count];
             document.getElementById("header-text").textContent = textArray[count];
         }
