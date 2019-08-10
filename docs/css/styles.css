@@ -241,6 +241,11 @@ body {
     .site-navigation .navigation-links li {
       padding: 0.5em;
       position: relative; }
+    .site-navigation .navigation-links .selected:after {
+      display: block;
+      content: '';
+      outline: 2px solid rgba(0, 104, 56, 0.6);
+      margin-top: 0.4em; }
     .site-navigation .navigation-links a {
       padding: 0.5em;
       color: #FFFFFF; }
@@ -248,7 +253,7 @@ body {
         content: '';
         position: absolute;
         top: 80%;
-        height: 3px;
+        height: 4px;
         width: 0%;
         left: 5%;
         background-color: rgba(0, 104, 56, 0.6);

@@ -2,11 +2,16 @@
     <div class="site-title">    
         <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/site-logo.jpg" alt="Site-logo"></a>
     </div>
-        <ul class="navigation-links">
-        <li><a href="{{ site.baseurl }}/services/">Услуги</a></li>
-        <li><a href="{{ site.baseurl }}/portfolio/">Портфолио</a></li>
-        <li><a href="{{ site.baseurl }}/about/">За нас</a></li>
-        <li><a href="{{ site.baseurl }}/team/">Екип</a></li>
-        <li><a href="{{ site.baseurl }}/contacts/">Контакти</a></li>
-    </ul>
+    <ul class="navigation-links">
+        {% assign nav = site.pages | sort:"order" %}
+        {% for item in nav %}
+            {% if item.title %}    
+                <li{% if item.url == page.url %} class="selected"{% endif %}>
+                    <a href="{{ site.baseurl }}{{ item.url }}">
+                        {{ item.title }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
 </nav>

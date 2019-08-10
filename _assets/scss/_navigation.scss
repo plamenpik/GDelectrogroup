@@ -41,6 +41,13 @@
             padding: 0.5em;
             position: relative;
         }
+        
+        .selected:after {
+            display: block;
+            content: '';
+            outline: 2px solid rgba(0, 104, 56, 0.6);
+            margin-top: 0.4em;            
+        }
 
         & a {
             padding: 0.5em;
@@ -50,7 +57,7 @@
                 content: '';
                 position: absolute;
                 top: 80%;
-                height: 3px;
+                height: 4px;
                 width: 0%;
                 left: 5%;
                 background-color: rgba(0, 104, 56, 0.6);
