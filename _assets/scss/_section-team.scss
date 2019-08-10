@@ -20,8 +20,15 @@
 
     & main {
         padding-top: 2em;
+        margin-top: 3.5em;
+        background: rgb(143, 178, 206);
+        border-radius: var(--sections-border-radius);
 
-        header:after {
+        & h3 {
+            text-align: center;
+        }
+
+        & header:after {
             display: block;
             content: '';
             width: 8em;
@@ -33,7 +40,7 @@
 
 
     .team-list {
-        padding: 1.5em 0 0 0;
+        padding: 1.5em 1.5em 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -61,8 +68,7 @@
         .team-name {
             font-weight: bold;
         }
-
-        & .team-message + .team-name,
+        
         & .team-position + .team-message {
             padding-top: 1.5em;
         }
@@ -72,7 +78,6 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0.2em 0.5rem 0 rgba(0, 0 ,0, 0.3);
 
         &:before,
         &:after {
@@ -84,7 +89,7 @@
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             border-radius: 50%;
-            box-shadow: 0 0 0 4px rgba(0 ,0 ,0 ,0.3) inset;
+            box-shadow: 0 0 0 4px rgba(0, 104, 56, 0.6) inset;
             z-index: 2;
         }
         
@@ -101,5 +106,9 @@
             transform: translateY(-50%);
             z-index: 1;
         }
-    }       
+    }
+    
+    .team-message {
+        font-style: italic;
+    }
 }
