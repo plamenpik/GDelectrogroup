@@ -14,8 +14,36 @@
         justify-content: space-around;
         align-items: center;
 
+        & .contacts {
+          text-align: left;
+          font-size: 1.3em;
+          font-weight: 600;
+
+          & li {
+            padding: 1.5em 0;
+
+            &:before {
+              display: inline-block;
+              content: '';
+              padding-right: 1em;
+              font-family: 'Font Awesome 5 Free';
+              font-weight: bold;
+              font-size: 1.5em;
+              color: #006838;
+            }
+
+            &:nth-child(1):before { content: '\f64f'; }
+            &:nth-child(2):before { content: '\f5a0'; }
+            &:nth-child(3):before { content: '\f095'; }
+            &:nth-child(4):before { content: '\f1fa'; }
+          }
+        }
+
         & iframe {
+            border: 0;
             border-radius: 0.5em;
+            width: 35em;
+            height: 30em;
         }
 
         @media (max-width: 600px) {
@@ -27,13 +55,13 @@
             }
         }
     }
-
-    form {
+    
+    .contact-form {
         width: 70%;
         text-align: center;
-        margin: 1rem auto;
-        padding: 2rem;
-
+        margin: 1rem auto 0;
+        padding: 2rem 2rem 0;
+    
         @media (max-width: 600px) {
           width: 100%;
         }
@@ -41,18 +69,13 @@
         fieldset {
           border: none;
         }
-
-        input, textarea {
-          border-radius: 8px;
+    
+        input, 
+        textarea {
+          border-radius: var(--sections-border-radius);
           border: none;
           outline: none;
           box-shadow: 0 1px 1px rgba(black, 0.1);
-        }
-    }
-
-    .contact-form {
-        input, 
-        textarea {
           padding: 1.2rem;
           display: block;
           width: 100%;
@@ -61,6 +84,7 @@
     
         legend {
           font-size: 2rem;
+          padding-bottom: 1em;
         }
     
         textarea {

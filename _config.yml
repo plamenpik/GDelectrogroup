@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: G&D electro group
 email: gdelectrogroup@abv.bg
+phone: +359 843 1424
 description: Професионална електромонтажна група.
 destination: docs
 baseurl: "" # the subpath of your site, e.g. /blog
