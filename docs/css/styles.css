@@ -188,16 +188,13 @@ body {
 
 @media (max-width: 800px) {
   #header-text {
-    padding: 0.8em;
-    font-size: 0.8em; }
+    padding: 0.8em; }
     #header-text:hover {
       padding: calc(0.75em + 3px); }
   .switcher {
     padding: 0.5em 0; }
     .switcher a {
-      padding: 0.4em 1em; }
-    .switcher i {
-      font-size: 0.8em; } }
+      padding: 0.4em 1.5em; } }
 
 .site-navigation {
   display: flex;
@@ -260,7 +257,8 @@ body {
       width: 100%;
       transform: translateX(0); }
       .site-navigation .navigation-links {
-        display: block; } }
+        display: block;
+        font-size: 1.2em; } }
 
 .site-footer {
   width: 95%;
