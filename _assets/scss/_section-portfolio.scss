@@ -35,8 +35,10 @@
             overflow: hidden;
             box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.5); 
             
-            &:hover {
-                box-shadow: 0px 0px 10px 10px rgba(0, 104, 56, 0.9); 
+            @media (min-width: 1025px) {
+                &:hover {
+                    box-shadow: 0px 0px 10px 10px rgba(0, 104, 56, 0.9); 
+                }
             }
 
             &:before {
@@ -64,31 +66,35 @@
                     margin: 0 auto;
                 }
 
-                &:hover:before {
-                    content: '';
-                    display: block;
-                    background: rgba(50, 51, 74, 0.6);
-                    z-index: 2;
-                    position: absolute;
-                    top: 0; left: 0; right: 0; bottom: 0;
-                }
+                @media (min-width: 1025px) {
+                    &:hover:before {
+                        content: '';
+                        display: block;
+                        background: rgba(50, 51, 74, 0.6);
+                        z-index: 2;
+                        position: absolute;
+                        top: 0; left: 0; right: 0; bottom: 0;
+                    }                
                 
-                &:hover strong {
-                    text-align: center;
-                    font-style: italic;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 3;
-                    color: #FFF;                
+                    &:hover strong {
+                        text-align: center;
+                        font-style: italic;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 3;
+                        color: #FFF;                
+                    }
                 }
             }
     
-            & > a:hover img {
-                position: relative;
-                z-index: 1;
-            }       
+            @media (min-width: 1025px) {
+                & > a:hover img {
+                    position: relative;
+                    z-index: 1;
+                } 
+            }      
            
         }        
         

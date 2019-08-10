@@ -32,9 +32,11 @@
     color: #FFFFFF;
     border-radius: var(--sections-border-radius); 
 
-    &:hover {
-        background: linear-gradient(0deg,rgba(0, 104, 56, 0.6), rgba(0, 104, 56, 0.6));
-        padding: calc(1.5em + 3px);
+    @media (min-width: 1025px) {
+        &:hover {
+            background: linear-gradient(0deg,rgba(0, 104, 56, 0.6), rgba(0, 104, 56, 0.6));
+            padding: calc(1.5em + 3px);
+        }
     }
 }
 
@@ -50,9 +52,11 @@
         padding: 0.5em 2em;
         color: #FFFFFF;
 
-        &:hover {
-            outline: 1px solid #FFFFFF;
-            color: #FDC63C;
+            @media (min-width: 1025px) {
+            &:hover {
+                outline: 1px solid #FFFFFF;
+                color: #FDC63C;
+            }
         }
     }            
 }

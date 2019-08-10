@@ -59,9 +59,20 @@
             color: #00A4EF;
         }  
         
-        & li:nth-child(4):before { content: '\f044';}
-        & li:nth-child(5):before { content: '\f676';}
-        & li:nth-child(6):before { content: '\f2a0';}
+        & li:nth-child(4):before { 
+            content: '\f044';
+            color: rgba(0, 104, 56, 0.85);
+        }
+
+        & li:nth-child(5):before { 
+            content: '\f676';
+            color: rgba(50, 51, 74, 0.75);
+        }
+
+        & li:nth-child(6):before { 
+            content: '\f2a0';
+            color: #FFAB4C;
+        }
     }    
 }
 

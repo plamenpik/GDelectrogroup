@@ -9,9 +9,11 @@
     text-transform: uppercase;
     font-weight: 700;
 
-    &:hover {
-        cursor: pointer;
-        background-color: #FDC63C;
-        color: #7A7A7A;        
+    @media (min-width: 1025px) {
+        &:hover {
+            cursor: pointer;
+            background-color: #FDC63C;
+            color: #7A7A7A;        
+        }
     }
 }
