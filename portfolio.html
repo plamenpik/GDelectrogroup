@@ -106,16 +106,14 @@ gallery:
         <h2>Портфолио</h2>
         <p>Разгледайте нашата визитка в снимки по долу</p>
     </header>
-    <main>
-        <ul class="portfolio-gallery">
-                {% for item in page.gallery %}
-                <li class="image {{ item.size }}">
-                    <a href="{{ site.baseurl }}/{{ item.file }}">
-                        <img src="{{ site.baseurl }}/{{ item.file }}" alt="Portfolio picture">
-                        <strong>{{ item.caption }}</strong>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-    </main>
+    <ul class="portfolio-gallery">
+        {% for item in page.gallery %}
+          <li class="image {{ item.size }}">
+            <a href="{{ site.baseurl }}/{{ item.file }}">
+              <img src="{{ site.baseurl }}/{{ item.file }}" alt="Portfolio picture">
+              <strong>{{ item.caption }}</strong>
+            </a>
+          </li>
+        {% endfor %}
+    </ul>
 </section>

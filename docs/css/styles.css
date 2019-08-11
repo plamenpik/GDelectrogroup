@@ -496,7 +496,7 @@ body {
         margin-top: 1.5em; }
     .site-about header h4 {
       font-weight: bold; }
-  .site-about main {
+  .site-about .wrapper {
     position: relative; }
   .site-about .line {
     position: absolute;
@@ -572,14 +572,14 @@ body {
       content: '';
       border: 1px solid #7A7A7A;
       margin-top: 1.5em; }
-  .site-our-team main {
+  .site-our-team div {
     padding-top: 2em;
     margin-top: 3.5em;
     background: #8fb2ce;
     border-radius: var(--sections-border-radius); }
-    .site-our-team main h3 {
+    .site-our-team div h3 {
       text-align: center; }
-    .site-our-team main header:after {
+    .site-our-team div header:after {
       display: block;
       content: '';
       width: 8em;
