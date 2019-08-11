@@ -1,130 +1,130 @@
 .site-contacts {
-    width: 90%;
-    margin: 0 auto;
-    
-    & header {
-        text-align: center;
-        padding: 4em 0 3em 0;
+  width: 90%;
+  margin: 0 auto;
+  
+  & header {
+    text-align: center;
+    padding: 4em 0 3em 0;
 
-        &:after {
-          @include underline;
+    &:after {
+      @include underline;
+    }
+  }
+
+  .contacts-and-map {
+    text-align: center;
+    padding: 1em 0 4em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+
+    & .contacts {
+      text-align: left;
+      font-size: 1.3em;
+      font-weight: 600;
+
+      & li {
+        padding: 1.5em 0;
+
+        &:before {
+          @include pseudo-inline;
+          padding-right: 1em;
+          font-family: 'Font Awesome 5 Free';
+          font-weight: bold;
+          font-size: 1.5em;
+          color: $color-green;
+        }
+
+        &:nth-child(1):before { content: '\f64f'; }
+        &:nth-child(2):before { content: '\f5a0'; }
+        &:nth-child(3):before { content: '\f095'; }
+        &:nth-child(4):before { content: '\f1fa'; }
       }
     }
 
-    .contacts-and-map {
-      text-align: center;
-      padding: 1em 0 4em;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
+    & iframe {
+      border: 0;
+      border-radius: 0.5em;
+      width: 90%;
+      height: 40em;
 
-      @media (max-width: 900px) {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-    }
-
-      & .contacts {
-        text-align: left;
-        font-size: 1.3em;
-        font-weight: 600;
-
-        & li {
-          padding: 1.5em 0;
-
-          &:before {
-            @include pseudo-inline;
-            padding-right: 1em;
-            font-family: 'Font Awesome 5 Free';
-            font-weight: bold;
-            font-size: 1.5em;
-            color: $color-green;
-          }
-
-          &:nth-child(1):before { content: '\f64f'; }
-          &:nth-child(2):before { content: '\f5a0'; }
-          &:nth-child(3):before { content: '\f095'; }
-          &:nth-child(4):before { content: '\f1fa'; }
-        }
+      @media (max-width: 600px) {
+          height: 25em;            
       }
 
-      & iframe {
-        border: 0;
-        border-radius: 0.5em;
-        width: 90%;
-        height: 40em;
-
-        @media (max-width: 600px) {
-            height: 25em;            
-        }
-
-        @media (max-width: 400px) {
-          height: 20em;            
-      }
+      @media (max-width: 400px) {
+        height: 20em;            
       }
     }
-    
-    .contact-form {
-        width: 70%;
-        text-align: center;
-        margin: 1rem auto 0;
-        padding: 2rem 2rem 0;
-    
-        @media (max-width: 800px) {
-          width: 100%;
-        }
-      
-        fieldset {
-          border: none;
-        }
-    
-        input, 
-        textarea {
-          border-radius: $sections-border-radius;
-          border: none;
-          outline: none;
-          box-shadow: 0 1px 1px rgba($color-black, 0.3);
-          padding: 1.2rem;
-          display: block;
-          width: 100%;
-          margin-top: 1em;
-        }
-    
-        legend {
-          font-size: 2rem;
-          padding-bottom: 1em;
-        }
-    
-        textarea {
-          height: 13.65rem;
-        }
-    
-        .button {
-          font-size: 1.6rem;
-          padding: 0.8rem;
-        }
-    
-        .half {
-          float: left;
-          width: 48%;
-          margin-bottom: 1em;
-        }
-    
-        .right {
-          width: 50%;
-        }
-    
-        .left {
-          margin-right: 2%;
-        }  
-        
-        @media (max-width: 600px) {
-          .half {
-            width: 100%;
-          }
+  }
+  
+  .contact-form {
+    width: 70%;
+    text-align: center;
+    margin: 1rem auto 0;
+    padding: 2rem 2rem 0;
 
-          .left {
-            margin: 0;
-          }
-        }
-    }    
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  
+    fieldset {
+      border: none;
+    }
+
+    input, 
+    textarea {
+      border-radius: $sections-border-radius;
+      border: none;
+      outline: none;
+      box-shadow: 0 1px 1px rgba($color-black, 0.3);
+      padding: 1.2rem;
+      display: block;
+      width: 100%;
+      margin-top: 1em;
+    }
+
+    legend {
+      font-size: 2rem;
+      padding-bottom: 1em;
+    }
+
+    textarea {
+      height: 13.65rem;
+    }
+
+    .button {
+      font-size: 1.6rem;
+      padding: 0.8rem;
+    }
+
+    .half {
+      float: left;
+      width: 48%;
+      margin-bottom: 1em;
+    }
+
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      margin-right: 2%;
+    }  
+    
+    @media (max-width: 600px) {
+      .half {
+        width: 100%;
+      }
+
+      .left {
+        margin: 0;
+      }
+    }
+  }    
 }
