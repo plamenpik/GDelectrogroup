@@ -30,8 +30,8 @@
             flex: 0 0 32%;
             padding: 2.5em 1em;
             margin: 1em 0;
-            border: 2px solid rgba(0, 104, 56, 0.6);
-            border-radius: var(--sections-border-radius);
+            border: 2px solid rgba($color-green, 0.6);
+            border-radius: $sections-border-radius;
 
             @media (max-width: 1024px) {
                 flex: 0 0 48%;
@@ -47,34 +47,34 @@
             font-family: 'Font Awesome 5 Free';
             font-weight: bold;
             font-size: 5em;
-            color: #FED136;
+            color: $color-yellow;
         }
 
         & li:nth-child(1):before { content: '\f0eb';}
 
         & li:nth-child(2):before { 
             content: '\f0e7';
-            color: #F34F29;
+            color: $color-red;
         }
 
         & li:nth-child(3):before { 
             content: '\f005';
-            color: #00A4EF;
+            color: $color-light-blue;
         }  
         
         & li:nth-child(4):before { 
             content: '\f044';
-            color: rgba(0, 104, 56, 0.85);
+            color: rgba($color-green, 0.85);
         }
 
         & li:nth-child(5):before { 
             content: '\f676';
-            color: rgba(50, 51, 74, 0.75);
+            color: rgba($color-purple, 0.75);
         }
 
         & li:nth-child(6):before { 
             content: '\f2a0';
-            color: #FFAB4C;
+            color: $color-orange;
         }
     }    
 }

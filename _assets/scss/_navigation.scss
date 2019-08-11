@@ -2,11 +2,11 @@
     display: flex;
     padding: 0.3em 0;
     align-items: center;
-    background: #2e9eb7;
-    border-radius: var(--sections-border-radius);
+    background: $color-blue;
+    border-radius: $sections-border-radius;
     position: fixed;
     top: 1em;
-    box-shadow: 0px 0px 1em 0.1em rgba(0, 0, 0, 0.95);
+    box-shadow: 0px 0px 1em 0.1em rgba($color-black, 0.95);
     width: 80rem;
     left: 50%;
     transform: translateX(-50%);
@@ -45,13 +45,13 @@
         .selected:after {
             display: block;
             content: '';
-            outline: 2px solid rgba(0, 104, 56, 0.6);
+            outline: 2px solid rgba($color-green, 0.6);
             margin-top: 0.4em;            
         }
 
         & a {
             padding: 0.5em;
-            color: #FFFFFF;
+            color: $color-white;
 
             &:after {
                 content: '';
@@ -60,7 +60,7 @@
                 height: 4px;
                 width: 0%;
                 left: 5%;
-                background-color: rgba(0, 104, 56, 0.6);
+                background-color: rgba($color-green, 0.6);
                 transition: 0.5s ease all 0.2s;
             }
 

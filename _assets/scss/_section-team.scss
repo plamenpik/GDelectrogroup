@@ -18,8 +18,8 @@
     & div {
         padding-top: 2em;
         margin-top: 3.5em;
-        background: rgb(143, 178, 206);
-        border-radius: var(--sections-border-radius);
+        background: rgba($color-light-blue, 0.7);
+        border-radius: $sections-border-radius;
 
         & h3 {
             text-align: center;
@@ -30,7 +30,7 @@
             content: '';
             width: 8em;
             height: 0.3em;
-            background: #006838;
+            background: $color-green;
             margin: 1em auto 2em auto;
         }
     }
@@ -85,7 +85,7 @@
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             border-radius: 50%;
-            box-shadow: 0 0 0 4px rgba(0, 104, 56, 0.6) inset;
+            box-shadow: 0 0 0 4px rgba($color-green, 0.6) inset;
             z-index: 2;
         }
         

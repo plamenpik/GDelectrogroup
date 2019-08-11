@@ -29,7 +29,7 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        border: 1px solid #7A7A7A;
+        border: 1px solid $color-gray;
     }    
 
     @media (max-width: 600px) {
@@ -69,7 +69,7 @@
                 width: 1.5em;
                 height: 1.5em;
                 border-radius: 50%;
-                background: rgb(0, 104, 56);
+                background: $color-green;
                 position: absolute;
                 transform: translate(150%, 25%);
             }
@@ -104,12 +104,12 @@
                     text-align: center;
                     padding-left: 0;
                     transform: translateX(0);
-                    border-bottom: 1px solid rgb(0, 104, 56);
+                    border-bottom: 1px solid $color-green;
                 }
 
                 &:nth-child(even) {
                     padding-right: 0;
-                    border-bottom: 1px solid rgb(0, 104, 56);
+                    border-bottom: 1px solid $color-green;
                 }
 
                 &:last-child {

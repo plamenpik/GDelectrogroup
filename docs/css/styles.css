@@ -1,33 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i&display=swap");
-:root {
-  --font-family-content: 'Fira Sans', sans-serif;
-  --font-family-headings: 'Merriweather', serif;
-  --font-family-large: 18px;
-  --font-family-desktop: 16px;
-  --font-family-mobile: 14px;
-  --sections-border-radius: 0.3em; }
-
 *, *:after, *:before {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
 
 html {
-  font: var(--font-family-desktop)/1.5 var(--font-family-content, sans-serif);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Fira Sans", sans-serif;
   box-sizing: border-box; }
   @media (min-width: 1600px) {
     html {
-      font-size: var(--font-family-large); } }
+      font-size: 18px; } }
   @media (max-width: 1024px) {
     html {
-      font-size: var(--font-family-mobile); } }
+      font-size: 14px; } }
 
 body, table, form, select, option, input, textarea {
   font: inherit; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
-  font-family: var(--font-family-headings, serif);
+  font-family: "Merriweather", serif;
   margin-bottom: 0.5em;
   font-weight: normal; }
 
@@ -64,7 +58,7 @@ ul, ol {
 .button {
   display: inline-block;
   padding: 1em 1.5em;
-  background-color: #2e9eb7;
+  background-color: #2E9EB7;
   color: #FFFFFF;
   border-radius: 0.3em;
   border: 1px solid transparent;
@@ -74,7 +68,7 @@ ul, ol {
   @media (min-width: 1025px) {
     .button:hover {
       cursor: pointer;
-      background-color: #FDC63C;
+      background-color: #FED136;
       color: #7A7A7A; } }
 
 body {
@@ -85,7 +79,7 @@ body {
   margin: 0em auto; }
 
 .site-header {
-  border-radius: var(--sections-border-radius);
+  border-radius: 0.3em;
   overflow: hidden; }
   .site-header #header-images {
     position: relative;
@@ -110,7 +104,7 @@ body {
     padding: 1.5em;
     background: linear-gradient(0deg, rgba(50, 51, 74, 0.6), rgba(50, 51, 74, 0.6));
     color: #FFFFFF;
-    border-radius: var(--sections-border-radius); }
+    border-radius: 0.3em; }
     @media (min-width: 1025px) {
       .site-header #header-text:hover {
         background: linear-gradient(0deg, rgba(0, 104, 56, 0.6), rgba(0, 104, 56, 0.6));
@@ -121,14 +115,14 @@ body {
     background: linear-gradient(0deg, rgba(50, 51, 74, 0.6), rgba(50, 51, 74, 0.6));
     text-align: center;
     padding: 1em 0;
-    border-radius: var(--sections-border-radius); }
+    border-radius: 0.3em; }
     .site-header #switcher a {
       padding: 0.5em 2em;
       color: #FFFFFF; }
       @media (min-width: 1025px) {
         .site-header #switcher a:hover {
           outline: 1px solid #FFFFFF;
-          color: #FDC63C; } }
+          color: #FED136; } }
   .site-header .image-one > a:nth-child(1) {
     outline: 1px solid #FFFFFF; }
   .site-header .image-two > a:nth-child(2) {
@@ -199,8 +193,8 @@ body {
   display: flex;
   padding: 0.3em 0;
   align-items: center;
-  background: #2e9eb7;
-  border-radius: var(--sections-border-radius);
+  background: #2E9EB7;
+  border-radius: 0.3em;
   position: fixed;
   top: 1em;
   box-shadow: 0px 0px 1em 0.1em rgba(0, 0, 0, 0.95);
@@ -302,7 +296,7 @@ body {
     .site-footer .link.instagram:hover:before {
       color: #FFAB4C; }
     .site-footer .link.facebook:hover:before {
-      color: #23AAF2; }
+      color: #8FB2CE; }
     .site-footer .link.github:hover:before {
       color: #F34F29; } }
 
@@ -315,6 +309,7 @@ body {
   .site-about-us li:before {
     display: inline-block;
     content: '';
+    content: '\f0a9';
     font-family: 'Font Awesome 5 Free';
     font-weight: bold;
     color: #006838;
@@ -323,7 +318,7 @@ body {
     float: right;
     margin-left: 1em;
     box-shadow: 0px 0px 10px 2px rgba(0, 104, 56, 0.85);
-    border-radius: var(--sections-border-radius); }
+    border-radius: 0.3em; }
   .site-about-us .image-left {
     float: left;
     margin-right: 1em; }
@@ -356,7 +351,7 @@ body {
       padding: 2.5em 1em;
       margin: 1em 0;
       border: 2px solid rgba(0, 104, 56, 0.6);
-      border-radius: var(--sections-border-radius); }
+      border-radius: 0.3em; }
       @media (max-width: 1024px) {
         .site-services .services li {
           flex: 0 0 48%; } }
@@ -377,7 +372,7 @@ body {
       color: #F34F29; }
     .site-services .services li:nth-child(3):before {
       content: '\f005';
-      color: #00A4EF; }
+      color: #8FB2CE; }
     .site-services .services li:nth-child(4):before {
       content: '\f044';
       color: rgba(0, 104, 56, 0.85); }
@@ -414,7 +409,7 @@ body {
       position: relative;
       overflow: hidden;
       box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.5);
-      border-radius: var(--sections-border-radius); }
+      border-radius: 0.3em; }
       @media (min-width: 1025px) {
         .site-portfolio .portfolio-gallery li:hover {
           box-shadow: 0px 0px 10px 10px rgba(0, 104, 56, 0.9); } }
@@ -460,7 +455,7 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 3;
-            color: #FFF; } }
+            color: #FFFFFF; } }
       @media (min-width: 1025px) {
         .site-portfolio .portfolio-gallery li > a:hover img {
           position: relative;
@@ -570,8 +565,8 @@ body {
   .site-our-team div {
     padding-top: 2em;
     margin-top: 3.5em;
-    background: #8fb2ce;
-    border-radius: var(--sections-border-radius); }
+    background: rgba(143, 178, 206, 0.7);
+    border-radius: 0.3em; }
     .site-our-team div h3 {
       text-align: center; }
     .site-our-team div header:after {
@@ -695,10 +690,10 @@ body {
       border: none; }
     .site-contacts .contact-form input,
     .site-contacts .contact-form textarea {
-      border-radius: var(--sections-border-radius);
+      border-radius: 0.3em;
       border: none;
       outline: none;
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
       padding: 1.2rem;
       display: block;
       width: 100%;

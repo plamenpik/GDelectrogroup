@@ -5,15 +5,17 @@
 }
 
 html {
-    font: var(--font-family-desktop)/1.5 var(--font-family-content, sans-serif);
+    font-size: $font-size-desktop;
+    line-height: 1.5;
+    font-family: $font-family-content;
     box-sizing: border-box; 
     
     @media (min-width: 1600px) {
-        font-size: var(--font-family-large);
+        font-size: $font-size-large;
     }
     
     @media (max-width: 1024px) {
-        font-size: var(--font-family-mobile);
+        font-size: $font-size-mobile;
     }
 }
 
@@ -23,7 +25,7 @@ body, table, form, select, option, input, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
-    font-family: var(--font-family-headings, serif);
+    font-family: $font-family-headings;
     margin-bottom: 0.5em;
     font-weight: normal;
 }

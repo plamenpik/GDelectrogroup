@@ -1,5 +1,5 @@
 .site-header {
-    border-radius: var(--sections-border-radius); 
+    border-radius: $sections-border-radius; 
     overflow: hidden;   
 
     #header-images {
@@ -26,13 +26,13 @@
         text-transform: uppercase;
         font-weight: 700;
         padding: 1.5em;
-        background: linear-gradient(0deg,rgba(50, 51, 74, 0.6), rgba(50, 51, 74, 0.6));
-        color: #FFFFFF;
-        border-radius: var(--sections-border-radius); 
+        background: linear-gradient(0deg,rgba($color-purple, 0.6), rgba($color-purple, 0.6));
+        color: $color-white;
+        border-radius: $sections-border-radius; 
 
         @media (min-width: 1025px) {
             &:hover {
-                background: linear-gradient(0deg,rgba(0, 104, 56, 0.6), rgba(0, 104, 56, 0.6));
+                background: linear-gradient(0deg,rgba($color-green, 0.6), rgba($color-green, 0.6));
                 padding: calc(1.5em + 3px);
             }
         }
@@ -41,31 +41,31 @@
     #switcher {
         width: 100%;
         margin: 0 auto;
-        background: linear-gradient(0deg,rgba(50, 51, 74, 0.6), rgba(50, 51, 74, 0.6));
+        background: linear-gradient(0deg,rgba($color-purple, 0.6), rgba($color-purple, 0.6));
         text-align: center;
         padding: 1em 0;
-        border-radius: var(--sections-border-radius); 
+        border-radius: $sections-border-radius; 
 
         & a {
             padding: 0.5em 2em;
-            color: #FFFFFF;
+            color: $color-white;
 
                 @media (min-width: 1025px) {
                 &:hover {
-                    outline: 1px solid #FFFFFF;
-                    color: #FDC63C;
+                    outline: 1px solid $color-white;
+                    color: $color-yellow;
                 }
             }
         }            
     }
 
-    .image-one > a:nth-child(1) { outline: 1px solid #FFFFFF; }
-    .image-two > a:nth-child(2) { outline: 1px solid #FFFFFF; }
-    .image-three > a:nth-child(3) { outline: 1px solid #FFFFFF; }
+    .image-one > a:nth-child(1) { outline: 1px solid $color-white; }
+    .image-two > a:nth-child(2) { outline: 1px solid $color-white; }
+    .image-three > a:nth-child(3) { outline: 1px solid $color-white; }
 
     .image-one {
         opacity: 0;
-        background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-images/lights.jpg')no-repeat center center;
+        background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/lights.jpg')no-repeat center center;
         background-size: cover; 
         animation: fadeIn 7s linear;
         animation-fill-mode: forwards;
@@ -74,7 +74,7 @@
 
     .image-two {
         opacity: 0;
-        background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-images/el.jpg')no-repeat center center;
+        background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/el.jpg')no-repeat center center;
         background-size: cover;
         animation: fadeIn 7s linear 7s;
         animation-fill-mode: forwards;
@@ -83,7 +83,7 @@
 
     .image-three {
         opacity: 0;
-        background: linear-gradient(0deg,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url('../images/header-images/christmas.jpg')no-repeat center center;
+        background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/christmas.jpg')no-repeat center center;
         background-size: cover;
         animation: fadeIn 7s linear 14s;
         animation-fill-mode: forwards;

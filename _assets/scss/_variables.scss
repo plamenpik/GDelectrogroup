@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i&display=swap');
 
-
-:root {
-    --font-family-content: 'Fira Sans', sans-serif;
-    --font-family-headings: 'Merriweather', serif;   
+    $font-family-content: 'Fira Sans', sans-serif;
+    $font-family-headings: 'Merriweather', serif;   
     
-    --font-family-large: 18px;
-    --font-family-desktop: 16px;
-    --font-family-mobile: 14px;
+    $font-size-large: 18px;
+    $font-size-desktop: 16px;
+    $font-size-mobile: 14px;
 
-    --sections-border-radius: 0.3em;
-}
+    $sections-border-radius: 0.3em;
+
+    $color-yellow: #FED136;
+    $color-green: #006838;
+    $color-blue: #2E9EB7;
+    $color-light-blue: #8FB2CE;
+    $color-red: #F34F29;
+    $color-purple: #32334A;
+    $color-orange: #FFAB4C;
+    $color-gray: #7A7A7A;
+    $color-white: #FFFFFF;
+    $color-black: #000000;
+    $color-footer: #353535;

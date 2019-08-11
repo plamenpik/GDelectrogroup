@@ -30,12 +30,12 @@
         & li {
             position: relative;    
             overflow: hidden;
-            box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.5); 
-            border-radius: var(--sections-border-radius);
+            box-shadow: 0px 0px 10px 8px rgba($color-black, 0.5); 
+            border-radius: $sections-border-radius;
             
             @media (min-width: 1025px) {
                 &:hover {
-                    box-shadow: 0px 0px 10px 10px rgba(0, 104, 56, 0.9); 
+                    box-shadow: 0px 0px 10px 10px rgba($color-green, 0.9); 
                 }
             }
 
@@ -67,7 +67,7 @@
                 @media (min-width: 1025px) {
                     &:hover:before {
                         @include pseudo;
-                        background: rgba(50, 51, 74, 0.6);
+                        background: rgba($color-purple, 0.6);
                         z-index: 2;
                         position: absolute;
                         top: 0; left: 0; right: 0; bottom: 0;
@@ -81,7 +81,7 @@
                         left: 50%;
                         transform: translate(-50%, -50%);
                         z-index: 3;
-                        color: #FFF;
+                        color: $color-white;
                     }
                 }
             }

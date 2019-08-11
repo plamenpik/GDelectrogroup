@@ -1,8 +1,8 @@
 .button {
     display: inline-block;
     padding: 1em 1.5em;
-    background-color: #2e9eb7;
-    color: #FFFFFF;
+    background-color: $color-blue;
+    color: $color-white;
     border-radius: 0.3em;
     border: 1px solid transparent;
     max-width: 100%;
@@ -12,8 +12,8 @@
     @media (min-width: 1025px) {
         &:hover {
             cursor: pointer;
-            background-color: #FDC63C;
-            color: #7A7A7A;        
+            background-color: $color-yellow;
+            color: $color-gray;        
         }
     }
 }

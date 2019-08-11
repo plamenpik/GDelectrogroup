@@ -3,11 +3,11 @@
     margin: 0 auto;
     padding-top: 0.5em;
     text-align: center;
-    color: #7A7A7A;
+    color: $color-gray;
 
     &:before {
         @include pseudo;
-        border-bottom: 1px solid #353535;
+        border-bottom: 1px solid $color-footer;
         padding-top: 4.5em;
     }
 
@@ -29,7 +29,7 @@
         font-weight: bold;
         font-size: 2.5em;
         padding: 0 1em 1em 0;
-        color: #353535;
+        color: $color-footer;
         transform: translateX(25%);
     }
 
@@ -38,8 +38,8 @@
     .link.github:before { content: '\f09b'; }
 
     @media (min-width: 1025px) {
-        .link.instagram:hover:before { color: #FFAB4C; } 
-        .link.facebook:hover:before { color: #23AAF2; }
-        .link.github:hover:before { color: #F34F29 ; }
+        .link.instagram:hover:before { color: $color-orange; } 
+        .link.facebook:hover:before { color: $color-light-blue; }
+        .link.github:hover:before { color: $color-red ; }
     }
 }

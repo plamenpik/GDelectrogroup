@@ -9,9 +9,10 @@
 
     & li:before {
         @include pseudo-inline;
+        content: '\f0a9';
         font-family: 'Font Awesome 5 Free';
         font-weight: bold;
-        color: #006838;
+        color: $color-green;
         padding-right: 0.5em;
        
     }
@@ -19,8 +20,8 @@
     & img {
         float: right;
         margin-left: 1em;
-        box-shadow: 0px 0px 10px 2px rgba(0, 104, 56, 0.85);
-        border-radius: var(--sections-border-radius);
+        box-shadow: 0px 0px 10px 2px rgba($color-green, 0.85);
+        border-radius: $sections-border-radius;
     }
     
     & .image-left {
