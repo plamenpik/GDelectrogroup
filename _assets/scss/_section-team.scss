@@ -35,21 +35,24 @@
         }
     }
 
-
     .team-list {
         padding: 1.5em 1.5em 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1.5em; 
+        
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         & li {
-            flex: 0 0 48%;
             text-align: center;
             margin-bottom: 3.5em;
-
-            @media (min-width: 900px) {
-                flex: 0 0 30%;
-            }
         }
 
         & span {
@@ -58,8 +61,37 @@
 
         .team-avatar {
             width: 7em;
-            margin: 0 auto;
-            margin-bottom: 1.5em;
+            margin: 0 auto 1.5em;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;        
+
+            &:before,
+            &:after {
+                @include pseudo;
+            }
+
+            &:before {
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px rgba($color-green, 0.6) inset;
+                z-index: 2;
+            }
+            
+            &:after {
+                padding-top: 100%;
+            }
+            
+            & img {
+                display: block;
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%; left: 0%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
         }
 
         .team-name {
@@ -69,42 +101,9 @@
         & .team-position + .team-message {
             padding-top: 1.5em;
         }
-    }   
 
-    .team-avatar {
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-
-        &:before,
-        &:after {
-            @include pseudo;
+        .team-message {
+            font-style: italic;
         }
-
-        &:before {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            border-radius: 50%;
-            box-shadow: 0 0 0 4px rgba($color-green, 0.6) inset;
-            z-index: 2;
-        }
-        
-        &:after {
-            padding-top: 100%;
-        }
-        
-        & img {
-            display: block;
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 50%; left: 0%;
-            transform: translateY(-50%);
-            z-index: 1;
-        }
-    }
-    
-    .team-message {
-        font-style: italic;
-    }
+    }      
 }

@@ -13,50 +13,54 @@
 
     .contacts-and-map {
       text-align: center;
-        display: flex;
-        padding: 1em 0 4em;
-        justify-content: space-around;
-        align-items: center;
+      padding: 1em 0 4em;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
 
-        & .contacts {
-          text-align: left;
-          font-size: 1.3em;
-          font-weight: 600;
+      @media (max-width: 900px) {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
 
-          & li {
-            padding: 1.5em 0;
+      & .contacts {
+        text-align: left;
+        font-size: 1.3em;
+        font-weight: 600;
 
-            &:before {
-              @include pseudo-inline;
-              padding-right: 1em;
-              font-family: 'Font Awesome 5 Free';
-              font-weight: bold;
-              font-size: 1.5em;
-              color: $color-green;
-            }
+        & li {
+          padding: 1.5em 0;
 
-            &:nth-child(1):before { content: '\f64f'; }
-            &:nth-child(2):before { content: '\f5a0'; }
-            &:nth-child(3):before { content: '\f095'; }
-            &:nth-child(4):before { content: '\f1fa'; }
+          &:before {
+            @include pseudo-inline;
+            padding-right: 1em;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+            font-size: 1.5em;
+            color: $color-green;
           }
-        }
 
-        & iframe {
-            border: 0;
-            border-radius: 0.5em;
-            width: 35em;
-            height: 30em;
+          &:nth-child(1):before { content: '\f64f'; }
+          &:nth-child(2):before { content: '\f5a0'; }
+          &:nth-child(3):before { content: '\f095'; }
+          &:nth-child(4):before { content: '\f1fa'; }
         }
+      }
+
+      & iframe {
+        border: 0;
+        border-radius: 0.5em;
+        width: 90%;
+        height: 40em;
 
         @media (max-width: 600px) {
-            display: block;
-
-            iframe {
-                width: 300px;
-                height: 300px;
-            }
+            height: 25em;            
         }
+
+        @media (max-width: 400px) {
+          height: 20em;            
+      }
+      }
     }
     
     .contact-form {
@@ -65,7 +69,7 @@
         margin: 1rem auto 0;
         padding: 2rem 2rem 0;
     
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
           width: 100%;
         }
       

@@ -256,7 +256,7 @@ body {
       transform: translateX(0); }
       .site-navigation .navigation-links {
         display: block;
-        font-size: 1.2em; } }
+        font-size: 1.1em; } }
 
 .site-footer {
   width: 95%;
@@ -578,55 +578,56 @@ body {
       margin: 1em auto 2em auto; }
   .site-our-team .team-list {
     padding: 1.5em 1.5em 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1.5em; }
+    @media (max-width: 1024px) {
+      .site-our-team .team-list {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) {
+      .site-our-team .team-list {
+        grid-template-columns: repeat(1, 1fr); } }
     .site-our-team .team-list li {
-      flex: 0 0 48%;
       text-align: center;
       margin-bottom: 3.5em; }
-      @media (min-width: 900px) {
-        .site-our-team .team-list li {
-          flex: 0 0 30%; } }
     .site-our-team .team-list span {
       display: block; }
     .site-our-team .team-list .team-avatar {
       width: 7em;
-      margin: 0 auto;
-      margin-bottom: 1.5em; }
+      margin: 0 auto 1.5em;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative; }
+      .site-our-team .team-list .team-avatar:before, .site-our-team .team-list .team-avatar:after {
+        display: block;
+        content: ''; }
+      .site-our-team .team-list .team-avatar:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px rgba(0, 104, 56, 0.6) inset;
+        z-index: 2; }
+      .site-our-team .team-list .team-avatar:after {
+        padding-top: 100%; }
+      .site-our-team .team-list .team-avatar img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        z-index: 1; }
     .site-our-team .team-list .team-name {
       font-weight: bold; }
     .site-our-team .team-list .team-position + .team-message {
       padding-top: 1.5em; }
-  .site-our-team .team-avatar {
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative; }
-    .site-our-team .team-avatar:before, .site-our-team .team-avatar:after {
-      display: block;
-      content: ''; }
-    .site-our-team .team-avatar:before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 50%;
-      box-shadow: 0 0 0 4px rgba(0, 104, 56, 0.6) inset;
-      z-index: 2; }
-    .site-our-team .team-avatar:after {
-      padding-top: 100%; }
-    .site-our-team .team-avatar img {
-      display: block;
-      width: 100%;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      left: 0%;
-      transform: translateY(-50%);
-      z-index: 1; }
-  .site-our-team .team-message {
-    font-style: italic; }
+    .site-our-team .team-list .team-message {
+      font-style: italic; }
 
 .site-contacts {
   width: 90%;
@@ -641,10 +642,14 @@ body {
       margin-top: 1.5em; }
   .site-contacts .contacts-and-map {
     text-align: center;
-    display: flex;
     padding: 1em 0 4em;
-    justify-content: space-around;
-    align-items: center; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
+    @media (max-width: 900px) {
+      .site-contacts .contacts-and-map {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center; } }
     .site-contacts .contacts-and-map .contacts {
       text-align: left;
       font-size: 1.3em;
@@ -670,20 +675,20 @@ body {
     .site-contacts .contacts-and-map iframe {
       border: 0;
       border-radius: 0.5em;
-      width: 35em;
-      height: 30em; }
-    @media (max-width: 600px) {
-      .site-contacts .contacts-and-map {
-        display: block; }
+      width: 90%;
+      height: 40em; }
+      @media (max-width: 600px) {
         .site-contacts .contacts-and-map iframe {
-          width: 300px;
-          height: 300px; } }
+          height: 25em; } }
+      @media (max-width: 400px) {
+        .site-contacts .contacts-and-map iframe {
+          height: 20em; } }
   .site-contacts .contact-form {
     width: 70%;
     text-align: center;
     margin: 1rem auto 0;
     padding: 2rem 2rem 0; }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
       .site-contacts .contact-form {
         width: 100%; } }
     .site-contacts .contact-form fieldset {
