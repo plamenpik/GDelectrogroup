@@ -8,6 +8,10 @@
 
         & p {
             font-style: italic;
+
+            &:after {
+                @include underline;
+            }
         }
     }
 
@@ -39,8 +43,7 @@
         }
 
         & li:before {
-            display: block;
-            content: '';
+            @include pseudo;
             font-family: 'Font Awesome 5 Free';
             font-weight: bold;
             font-size: 5em;

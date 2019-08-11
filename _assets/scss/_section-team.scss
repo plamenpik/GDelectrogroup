@@ -11,10 +11,7 @@
         text-indent: 3em;
 
         &:after {
-            display: block;
-            content: '';
-            border: 1px solid #7A7A7A;
-            margin-top: 1.5em;
+            @include underline;
         }
     }
 
@@ -81,8 +78,7 @@
 
         &:before,
         &:after {
-            display: block;
-            content: '';
+            @include pseudo;
         }
 
         &:before {

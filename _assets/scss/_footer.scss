@@ -6,8 +6,7 @@
     color: #7A7A7A;
 
     &:before {
-        display: block;
-        content: '';
+        @include pseudo;
         border-bottom: 1px solid #353535;
         padding-top: 4.5em;
     }
@@ -25,8 +24,7 @@
     }
 
     .link:before {
-        display: inline-block;
-        content: '';
+        @include pseudo-inline;
         font-family: 'Font Awesome 5 Brands';
         font-weight: bold;
         font-size: 2.5em;

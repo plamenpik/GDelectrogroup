@@ -1,0 +1,16 @@
+@mixin pseudo {
+    display: block;
+    content: '';
+}
+
+@mixin pseudo-inline {
+    display: inline-block;
+    content: '';
+}
+
+@mixin underline {
+    display: block;
+    content: '';
+    border: 1px solid #7A7A7A;
+    margin-top: 1.5em;
+}

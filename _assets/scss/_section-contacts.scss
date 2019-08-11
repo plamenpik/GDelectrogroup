@@ -5,6 +5,10 @@
     & header {
         text-align: center;
         padding: 4em 0 3em 0;
+
+        &:after {
+          @include underline;
+      }
     }
 
     .contacts-and-map {
@@ -23,8 +27,7 @@
             padding: 1.5em 0;
 
             &:before {
-              display: inline-block;
-              content: '';
+              @include pseudo-inline;
               padding-right: 1em;
               font-family: 'Font Awesome 5 Free';
               font-weight: bold;

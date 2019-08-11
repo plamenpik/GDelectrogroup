@@ -9,10 +9,7 @@
             font-style: italic;
 
             &:after {
-                display: block;
-                content: '';
-                border: 1px solid #7A7A7A;
-                margin-top: 1.5em;
+                @include underline;
             }
         }
     }
@@ -22,7 +19,7 @@
     }
 
     .portfolio-gallery {        
-        padding: 2em 0 0;
+        padding: 3.5em 0 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
@@ -43,8 +40,7 @@
             }
 
             &:before {
-                display: block;
-                content: '';
+                @include pseudo;
                 padding-top: 65%;
             }
 
@@ -70,8 +66,7 @@
 
                 @media (min-width: 1025px) {
                     &:hover:before {
-                        content: '';
-                        display: block;
+                        @include pseudo;
                         background: rgba(50, 51, 74, 0.6);
                         z-index: 2;
                         position: absolute;

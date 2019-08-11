@@ -10,10 +10,7 @@
             font-style: italic;
 
             &:after {
-                display: block;
-                content: '';
-                border: 1px solid #7A7A7A;
-                margin-top: 1.5em;
+                @include underline;
             }
         }
 
@@ -68,8 +65,7 @@
             }
 
             &:before {
-                display: inline-block;
-                content: '';
+                @include pseudo-inline;
                 width: 1.5em;
                 height: 1.5em;
                 border-radius: 50%;
