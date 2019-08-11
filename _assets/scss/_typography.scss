@@ -10,11 +10,11 @@ html {
     font-family: $font-family-content;
     box-sizing: border-box; 
     
-    @media (min-width: 1600px) {
+    @include mq (desktop-large) {
         font-size: $font-size-large;
     }
     
-    @media (max-width: 1024px) {
+    @include mq (mobile) {
         font-size: $font-size-mobile;
     }
 }

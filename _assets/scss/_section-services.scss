@@ -33,11 +33,11 @@
             border: 2px solid rgba($color-green, 0.6);
             border-radius: $sections-border-radius;
 
-            @media (max-width: 1024px) {
+            @include mq (mobile) {
                 flex: 0 0 48%;
             }
 
-            @media (max-width: 600px) {
+            @include mq (phone) {
                 flex: 0 0 100%;
             }
         }

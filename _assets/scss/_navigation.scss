@@ -64,7 +64,7 @@
                 transition: 0.5s ease all 0.2s;
             }
 
-            @media (min-width: 1025px) {
+            @include mq (laptop) {
                 &:hover:after {
                     width: 90%;
                     transition: 0.3s ease all;
@@ -73,11 +73,11 @@
         }
     }
     
-    @media (max-width: 1300px) {
+    @include mq (desktop) {
         width: 97%;
     }
 
-    @media (max-width: 800px) {
+    @include mq (tablet) {
         position: static;
         width: 100%;
         transform: translateX(0);
@@ -111,7 +111,7 @@
     top: 0;
     left: 0;
 
-    @media (max-width: 800px) {
+    @include mq (tablet) {
         & + .site-header {
             .toggle-nav-btn {
                 display: flex;

@@ -30,7 +30,7 @@
         color: $color-white;
         border-radius: $sections-border-radius; 
 
-        @media (min-width: 1025px) {
+        @include mq (laptop) {
             &:hover {
                 background: linear-gradient(0deg,rgba($color-green, 0.6), rgba($color-green, 0.6));
                 padding: calc(1.5em + 3px);
@@ -50,7 +50,7 @@
             padding: 0.5em 2em;
             color: $color-white;
 
-                @media (min-width: 1025px) {
+            @include mq (laptop) {
                 &:hover {
                     outline: 1px solid $color-white;
                     color: $color-yellow;
@@ -105,7 +105,7 @@
         }
     }
 
-    @media (max-width: 800px) {
+    @include mq (tablet) {
         #header-text {
             padding: 0.8em;
 

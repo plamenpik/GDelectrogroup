@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 
-    @media (max-width: 900px) {
+    @include mq (tablet-big) {
       grid-template-columns: repeat(1, 1fr);
       justify-items: center;
     }
@@ -53,11 +53,11 @@
       width: 90%;
       height: 40em;
 
-      @media (max-width: 600px) {
+      @include mq (phone) {
           height: 25em;            
       }
 
-      @media (max-width: 400px) {
+      @include mq (phone-small) {
         height: 20em;            
       }
     }
@@ -69,7 +69,7 @@
     margin: 1rem auto 0;
     padding: 2rem 2rem 0;
 
-    @media (max-width: 800px) {
+    @include mq (tablet) {
       width: 100%;
     }
   
@@ -117,7 +117,7 @@
       margin-right: 2%;
     }  
     
-    @media (max-width: 600px) {
+    @include mq (phone) {
       .half {
         width: 100%;
       }

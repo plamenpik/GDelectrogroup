@@ -9,7 +9,7 @@
     text-transform: uppercase;
     font-weight: 700;
 
-    @media (min-width: 1025px) {
+    @include mq (laptop) {
         &:hover {
             cursor: pointer;
             background-color: $color-yellow;

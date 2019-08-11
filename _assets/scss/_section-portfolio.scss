@@ -14,7 +14,7 @@
         }
     }
 
-    @media (max-width: 800px) {
+    @include mq (tablet) {
         margin-top: 3em;
     }
 
@@ -33,7 +33,7 @@
             box-shadow: 0px 0px 10px 8px rgba($color-black, 0.5); 
             border-radius: $sections-border-radius;
             
-            @media (min-width: 1025px) {
+            @include mq (laptop) {
                 &:hover {
                     box-shadow: 0px 0px 10px 10px rgba($color-green, 0.9); 
                 }
@@ -64,7 +64,7 @@
                     transition: transform 0.4s ease-in-out;
                 }
 
-                @media (min-width: 1025px) {
+                @include mq (laptop) {
                     &:hover:before {
                         @include pseudo;
                         background: rgba($color-purple, 0.6);
@@ -86,7 +86,7 @@
                 }
             }
     
-            @media (min-width: 1025px) {
+            @include mq (laptop) {
                 & > a:hover img {
                     position: relative;
                     z-index: 1;
@@ -105,7 +105,7 @@
             grid-row: span 2;
         }
 
-        @media (max-width: 800px) {
+        @include mq (tablet) {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1em;
         }

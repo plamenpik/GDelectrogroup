@@ -32,7 +32,7 @@
         border: 1px solid $color-gray;
     }    
 
-    @media (max-width: 600px) {
+    @include mq (phone) {
         .line {
             display: none;
         }
@@ -84,7 +84,7 @@
         }
     }
 
-    @media (max-width: 600px) {
+    @include mq (phone) {
         .line {
             display: none;
         }

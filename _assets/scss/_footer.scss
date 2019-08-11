@@ -37,7 +37,7 @@
     .link.instagram:before { content: '\f16d'; }
     .link.github:before { content: '\f09b'; }
 
-    @media (min-width: 1025px) {
+    @include mq (laptop) {
         .link.instagram:hover:before { color: $color-orange; } 
         .link.facebook:hover:before { color: $color-light-blue; }
         .link.github:hover:before { color: $color-red ; }

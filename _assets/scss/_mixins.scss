@@ -14,3 +14,54 @@
     border: 1px solid #7A7A7A;
     margin-top: 1.5em;
 }
+
+@mixin mq($point) {
+
+    @if $point == desktop-large {
+        @media (min-width: 1600px) {
+            @content;
+        }
+    }
+
+    @else if $point == desktop {
+        @media (max-width: 1300px) {
+            @content;
+        }
+    }
+
+    @else if $point == laptop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    }
+
+    @else if $point == mobile {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $point == tablet-big {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @else if $point == tablet {
+        @media (max-width: 800px) {
+            @content;
+        }
+    }
+
+    @else if $point == phone {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+
+    @else if $point == phone-small {
+        @media (max-width: 400px) {
+            @content;
+        }
+    }
+}
