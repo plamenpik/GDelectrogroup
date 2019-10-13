@@ -43,7 +43,8 @@
         &:nth-child(1):before { content: '\f64f'; }
         &:nth-child(2):before { content: '\f5a0'; }
         &:nth-child(3):before { content: '\f095'; }
-        &:nth-child(4):before { content: '\f1fa'; }
+        &:nth-child(4):before { content: '\f095'; }
+        &:nth-child(5):before { content: '\f1fa'; }
       }
     }
 
@@ -51,7 +52,7 @@
       border: 0;
       border-radius: 0.5em;
       width: 90%;
-      height: 40em;
+      height: 35em;
 
       @include mq (phone) {
           height: 25em;            

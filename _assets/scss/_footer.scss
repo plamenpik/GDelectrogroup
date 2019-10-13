@@ -35,7 +35,7 @@
 
     .link.facebook:before { content: '\f09a'; }    
     .link.instagram:before { content: '\f16d'; }
-    .link.github:before { content: '\f09b'; }
+    .link.pinterest:before { content: '\f0d2'; }
 
     @include mq (laptop) {
         .link.instagram:hover:before { color: $color-orange; } 

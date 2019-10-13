@@ -322,8 +322,8 @@ body {
     content: '\f09a'; }
   .site-footer .link.instagram:before {
     content: '\f16d'; }
-  .site-footer .link.github:before {
-    content: '\f09b'; }
+  .site-footer .link.pinterest:before {
+    content: '\f0d2'; }
   @media (min-width: 1025px) {
     .site-footer .link.instagram:hover:before {
       color: #FFAB4C; }
@@ -703,12 +703,14 @@ body {
         .site-contacts .contacts-and-map .contacts li:nth-child(3):before {
           content: '\f095'; }
         .site-contacts .contacts-and-map .contacts li:nth-child(4):before {
+          content: '\f095'; }
+        .site-contacts .contacts-and-map .contacts li:nth-child(5):before {
           content: '\f1fa'; }
     .site-contacts .contacts-and-map iframe {
       border: 0;
       border-radius: 0.5em;
       width: 90%;
-      height: 40em; }
+      height: 35em; }
       @media (max-width: 600px) {
         .site-contacts .contacts-and-map iframe {
           height: 25em; } }
