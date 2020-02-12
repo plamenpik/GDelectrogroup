@@ -40,6 +40,6 @@
     @include mq (laptop) {
         .link.instagram:hover:before { color: $color-orange; } 
         .link.facebook:hover:before { color: $color-light-blue; }
-        .link.github:hover:before { color: $color-red ; }
+        .link.pinterest:hover:before { color: $color-red ; }
     }
 }
