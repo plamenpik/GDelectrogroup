@@ -19,6 +19,9 @@
             {% include footer.html %}
         </footer>
     </div>
+    {% if page.layout == 'main' %}
+        <script src="{{ site.baseurl }}/scripts/header.js"></script>
+    {% endif %}
 </body>
 
 </html>

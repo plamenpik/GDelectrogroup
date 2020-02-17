@@ -67,7 +67,7 @@
         opacity: 0;
         background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/lights.jpg')no-repeat center center;
         background-size: cover; 
-        animation: fadeIn 7s linear;
+        animation: fadeIn 6s linear;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
     }
@@ -76,7 +76,7 @@
         opacity: 0;
         background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/el.jpg')no-repeat center center;
         background-size: cover;
-        animation: fadeIn 7s linear 7s;
+        animation: fadeIn 6s linear 6s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
     }
@@ -85,7 +85,7 @@
         opacity: 0;
         background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/christmas.jpg')no-repeat center center;
         background-size: cover;
-        animation: fadeIn 7s linear 14s;
+        animation: fadeIn 6s linear 12s;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
     }
