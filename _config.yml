@@ -15,7 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: G&D electro group
 email: gdelectrogroup@abv.bg
-phone: 0898 43 14 24
+phone: +359 89 843 1424
+phone2: +359 89 703 6622
 description: Професионална електромонтажна група.
 destination: docs
 baseurl: "" # the subpath of your site, e.g. /blog
