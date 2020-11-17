@@ -67,7 +67,7 @@ ul, ol {
   font-weight: 700; }
   @media (min-width: 1025px) {
     .button:hover {
-      cursor: pointer;
+      cursor: not-allowed;
       background-color: #FED136;
       color: #7A7A7A; } }
 

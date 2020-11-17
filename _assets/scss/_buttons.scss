@@ -11,7 +11,7 @@
 
     @include mq (laptop) {
         &:hover {
-            cursor: pointer;
+            cursor: not-allowed;
             background-color: $color-yellow;
             color: $color-gray;        
         }

@@ -11,7 +11,7 @@
 @mixin underline {
     display: block;
     content: '';
-    border: 1px solid #7A7A7A;
+    border: 1px solid $color-gray;
     margin-top: 1.5em;
 }
 
