@@ -16,4 +16,8 @@
             color: $color-gray;        
         }
     }
+
+    @include mq (mobile) {
+        visibility: hidden;
+    }
 }

@@ -91,6 +91,11 @@ ul, ol {
     color: #7A7A7A;
   }
 }
+@media (max-width: 1024px) {
+  .button {
+    visibility: hidden;
+  }
+}
 
 body {
   background: #E4E4E4;
