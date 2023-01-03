@@ -4,7 +4,7 @@ let gulp = require("gulp"),
 	autoprefixer = require("gulp-autoprefixer"),
 	exec = require("gulp-exec"),
 	browserSync = require('browser-sync').create(),
-	sass = require('gulp-sass'),
+	sass = require('gulp-sass')(require('sass')),
 	cp = require("child_process");
 
 gulp.task("css", function() {
