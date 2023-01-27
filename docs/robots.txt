@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Allow: /
-
 User-agent: *
-Disallow: /
+Аllow: /
 
 Sitemap: https://gdelectrogroup.com/sitemap.xml
