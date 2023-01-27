@@ -9,10 +9,10 @@
     <ul class="navigation-links">
         {% assign nav = site.pages | sort:"order" %}
         {% for item in nav %}
-            {% if item.title %}    
+            {% if item.pagename %}    
                 <li{% if item.url == page.url %} class="selected"{% endif %}>
                     <a href="{{ site.baseurl }}{{ item.url }}">
-                        {{ item.title }}
+                        {{ item.pagename }}
                     </a>
                 </li>
             {% endif %}
