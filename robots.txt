@@ -1,4 +1,4 @@
 User-agent: *
-Аllow: /
+Allow: /
 
 Sitemap: https://gdelectrogroup.com/sitemap.xml
