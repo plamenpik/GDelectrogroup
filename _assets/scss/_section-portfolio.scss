@@ -49,8 +49,17 @@
                 top: 50%; left: 50%;
                 transform: translate(-50%, -50%); 
                 display: block;
-                width: 100%;
+                width: auto;
                 height: auto; 
+            }
+
+            & video {
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%); 
+                display: block; 
+                width: auto;
+                height: 100%; 
             }
 
             & > a {

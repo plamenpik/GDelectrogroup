@@ -4,7 +4,62 @@ pagename: Портфолио
 layout: portfolio
 permalink: /portfolio/
 order: 2
+video:
+  - caption: Делта Планет Мол Варна коледна декорация видео
+    file: images/portfolio-images/1.mp4
+    size: big
 gallery:
+  - caption: Коледна декорация
+    file: images/portfolio-images/99.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/98.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/97.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/96.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/95.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/94.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/93.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/92.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/91.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/90.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/89.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/88.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/87.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/86.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/85.jpg
+    size: small
+  - caption: Коледна декорация
+    file: images/portfolio-images/84.jpg
+    size: big
+  - caption: Коледна декорация
+    file: images/portfolio-images/83.jpg
+    size: big
   - caption: Гранд Мол Варна коледна декорация 2020-2021
     file: images/portfolio-images/82.jpg
     size: big
@@ -158,7 +213,7 @@ gallery:
   - caption: Коледна украса за фасадата на сградата на Мол Варна ЕАД
     file: images/portfolio-images/1.jpg
     size: big
-  - caption: Осветление на стъкления кръст катедраления храм "Свето Успение Богородично" гр. Варна
+  - caption: Осветление на стъкления кръст катедралния храм "Свето Успение Богородично" гр. Варна
     file: images/portfolio-images/2.jpg
     size: small
   - caption: LED осветление по индивидуален проект над спалня с вкопани профили и лента Едисон
@@ -212,10 +267,10 @@ gallery:
   - caption: Vinopoly с магазин в Mall Varna и осветление от нас
     file: images/portfolio-images/19.jpg
     size: small
-  - caption: Доставка, монтаж и подръжка на осветление на Магазин Lucy в Гранд Мол Варна
+  - caption: Доставка, монтаж и поддръжка на осветление на Магазин Lucy в Гранд Мол Варна
     file: images/portfolio-images/20.jpg
     size: big
-  - caption: Монтаж на дизейнерски полиле за хол
+  - caption: Монтаж на дизайнерски полилей за хол
     file: images/portfolio-images/21.jpg
     size: small
   - caption: Скрито осветление на стълбище с LED лента
@@ -224,7 +279,7 @@ gallery:
   - caption: Апартамент осветен с LED шини
     file: images/portfolio-images/23.jpg
     size: big
-  - caption: Полилеи в катедраления храм "Свето Успение Богородично" гр. Варна
+  - caption: Полилеи в катедралния храм "Свето Успение Богородично" гр. Варна
     file: images/portfolio-images/24.jpg
     size: small
   - caption: Коледна украса на сградата на Мол Варна
@@ -236,10 +291,10 @@ gallery:
   - caption: Външна украса на жилищна сграда
     file: images/portfolio-images/27.jpg
     size: small
-  - caption: Осветление на стъкления кръст катедраления храм "Свето Успение Богородично" гр. Варна
+  - caption: Осветление на стъкления кръст катедралния храм "Свето Успение Богородично" гр. Варна
     file: images/portfolio-images/28.jpg
     size: small
-  - caption: Външна украса на беседка за сладки проказки
+  - caption: Външна украса на беседка за сладки приказки
     file: images/portfolio-images/29.jpg
     size: big
   - caption: Народно читалище "Зора" гр. Шабла. Трибагреник от Led string
@@ -255,13 +310,23 @@ gallery:
 <section class="site-portfolio">
     <header>
         <h2>Портфолио</h2>
-        <p>Разгледайте нашата визитка в снимки по долу</p>
+        <p>Разгледайте нашата визитка в снимки и видео по долу</p>
     </header>
+    <ul class="portfolio-gallery">
+      {% for item in page.video %}
+        <li class="image {{ item.size }}">
+          <a href="{{ site.baseurl }}/{{ item.file }}">
+            <video src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" type="video/mp4"></video>
+            <strong>{{ item.caption }}</strong>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
     <ul class="portfolio-gallery">
         {% for item in page.gallery %}
           <li class="image {{ item.size }}">
             <a href="{{ site.baseurl }}/{{ item.file }}">
-              <img src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" alt="Portfolio picture" title="Pictute form our portfolio">
+              <img src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" alt="Portfolio picture" title="Picture form our portfolio">
               <strong>{{ item.caption }}</strong>
             </a>
           </li>
