@@ -1,0 +1,54 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit 
+}
+
+html {
+    font-size: $font-size-desktop;
+    line-height: 1.5;
+    font-family: $font-family-content;
+    box-sizing: border-box; 
+    
+    @include mq (desktop-large) {
+        font-size: $font-size-large;
+    }
+    
+    @include mq (mobile) {
+        font-size: $font-size-mobile;
+    }
+}
+
+body, table, form, select, option, input, textarea {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-family: $font-family-headings;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+h1 { font-size: 2.6em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+li {
+    list-style: none outside;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, ul, ol {
+    padding-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 2em;
+}

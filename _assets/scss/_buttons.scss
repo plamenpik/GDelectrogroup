@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    padding: 1em 1.5em;
+    background-color: $color-blue;
+    color: $color-white;
+    border-radius: 0.3em;
+    border: 1px solid transparent;
+    max-width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include mq (laptop) {
+        &:hover {
+            cursor: not-allowed;
+            background-color: $color-yellow;
+            color: $color-gray;        
+        }
+    }
+
+    @include mq (mobile) {
+        visibility: hidden;
+    }
+}

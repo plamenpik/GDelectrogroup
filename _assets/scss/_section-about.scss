@@ -1,0 +1,122 @@
+.site-about {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    
+    header {
+        padding: 4em 0 3em;
+
+        & p {
+            font-style: italic;
+
+            &:after {
+                @include underline;
+            }
+        }
+
+        & h4 {
+            font-weight: bold;
+        }
+    }
+
+    .wrapper {
+        position: relative;
+    }
+    
+    .line {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        border: 1px solid $color-gray;
+    }    
+
+    @include mq (phone) {
+        .line {
+            display: none;
+        }
+
+        .about {
+            width: 100%;
+        }
+    }
+
+    .about {
+        width: 50%;
+        padding-left: 0;
+        text-align: right;
+        
+        & li {
+            padding: 1em 3em;
+
+            &:last-child {
+                padding: 0 3em;
+            }
+            
+            &:nth-child(odd) {
+                padding-right: 0;
+                transform: translateX(100%);
+                text-align: left;
+            }
+
+            &:nth-child(even) {
+                padding-left: 0;    
+            }
+
+            &:before {
+                @include pseudo-inline;
+                width: 1.5em;
+                height: 1.5em;
+                border-radius: 50%;
+                background: $color-green;
+                position: absolute;
+                transform: translate(150%, 25%);
+            }
+            
+            &:nth-child(odd):before {
+                transform: translate(-250%, 25%);
+            }
+        }
+
+        & h4 {
+            font-weight: bold;
+        }
+    }
+
+    @include mq (phone) {
+        .line {
+            display: none;
+        }
+        
+        .about {
+            width: 100%;
+            padding-bottom: 0;
+
+            & li:before {
+                display: none;
+            }
+
+            & li {
+                text-align: center;
+
+                &:nth-child(odd) {
+                    text-align: center;
+                    padding-left: 0;
+                    transform: translateX(0);
+                    border-bottom: 1px solid $color-green;
+                }
+
+                &:nth-child(even) {
+                    padding-right: 0;
+                    border-bottom: 1px solid $color-green;
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid transparent;
+                    padding-top: 1em;
+                }
+            }
+        }
+    }
+}

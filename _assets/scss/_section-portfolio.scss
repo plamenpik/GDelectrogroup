@@ -1,0 +1,123 @@
+.site-portfolio {
+    width: 90%;
+    margin: 10em auto 0;
+
+    & header {
+        text-align: center;
+
+        & p {
+            font-style: italic;
+
+            &:after {
+                @include underline;
+            }
+        }
+    }
+
+    @include mq (tablet) {
+        margin-top: 3em;
+    }
+
+    .portfolio-gallery {        
+        padding: 3.5em 0 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        grid-auto-flow: dense;
+        
+        
+        & li {
+            position: relative;    
+            overflow: hidden;
+            box-shadow: 0px 0px 10px 8px rgba($color-black, 0.5); 
+            border-radius: $sections-border-radius;
+            
+            @include mq (laptop) {
+                &:hover {
+                    box-shadow: 0px 0px 10px 10px rgba($color-green, 0.9); 
+                }
+            }
+
+            &:before {
+                @include pseudo;
+                padding-top: 65%;
+            }
+
+            & img {
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%); 
+                display: block;
+                width: auto;
+                height: auto; 
+            }
+
+            & video {
+                position: absolute;
+                top: 50%; left: 50%;
+                transform: translate(-50%, -50%); 
+                display: block; 
+                width: auto;
+                height: 100%; 
+            }
+
+            & > a {
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+
+                & strong {
+                    width: 80%;
+                    margin: 0 auto;
+                    color: $color-background;
+                    transform: translate(100%, 100%);
+                    transition: transform 0.4s ease-in-out;
+                }
+
+                @include mq (laptop) {
+                    &:hover:before {
+                        @include pseudo;
+                        background: rgba($color-purple, 0.6);
+                        z-index: 2;
+                        position: absolute;
+                        top: 0; left: 0; right: 0; bottom: 0;
+                    }                
+                
+                    &:hover strong {
+                        text-align: center;
+                        font-style: italic;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 3;
+                        color: $color-white;
+                    }
+                }
+            }
+    
+            @include mq (laptop) {
+                & > a:hover img {
+                    position: relative;
+                    z-index: 1;
+                } 
+            }      
+           
+        }        
+        
+        .image.small {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        
+        .image.big {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        @include mq (tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+        }
+    }
+}

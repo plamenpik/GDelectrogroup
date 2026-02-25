@@ -1,0 +1,109 @@
+.site-our-team {
+    width: 90%;
+    margin: 4em auto 0;
+    
+    & h2 {
+        text-align: center;
+    }
+
+    & p {
+        font-style: italic;
+        text-indent: 3em;
+
+        &:after {
+            @include underline;
+        }
+    }
+
+    & div {
+        padding-top: 2em;
+        margin-top: 3.5em;
+        background: rgba($color-light-blue, 0.7);
+        border-radius: $sections-border-radius;
+
+        & h3 {
+            text-align: center;
+        }
+
+        & header:after {
+            display: block;
+            content: '';
+            width: 8em;
+            height: 0.3em;
+            background: $color-green;
+            margin: 1em auto 2em auto;
+        }
+    }
+
+    .team-list {
+        padding: 1.5em 1.5em 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1.5em; 
+        
+        @include mq (mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mq (phone) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        & li {
+            text-align: center;
+            margin-bottom: 3.5em;
+        }
+
+        & span {
+            display: block;
+        }
+
+        .team-avatar {
+            width: 7em;
+            margin: 0 auto 1.5em;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;        
+
+            &:before,
+            &:after {
+                @include pseudo;
+            }
+
+            &:before {
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px rgba($color-green, 0.6) inset;
+                z-index: 2;
+            }
+            
+            &:after {
+                padding-top: 100%;
+            }
+            
+            & img {
+                display: block;
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 50%; left: 0%;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+        }
+
+        .team-name {
+            font-weight: bold;
+        }
+        
+        & .team-position + .team-message {
+            padding-top: 1.5em;
+        }
+
+        .team-message {
+            font-style: italic;
+        }
+    }      
+}
