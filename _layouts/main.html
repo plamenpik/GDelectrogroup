@@ -13,7 +13,7 @@
             {% include "header.html" %}
         </header>
             <main>
-                {{ content }}
+                {{ content | safe }}
             </main>        
         <footer class="site-footer">
             {% include "footer.html" %}

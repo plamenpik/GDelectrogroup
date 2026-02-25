@@ -7,8 +7,7 @@
         <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/site-logo.jpg" alt="Site-logo" title="Our Company Logo"></a>
     </div>
     <ul class="navigation-links">
-        {% set nav = collections.navPages %}
-        {% for item in nav %}
+        {% for item in collections.all | sort(attribute='data.order') %}
             {% if item.data.pagename %}
                 <li{% if item.url == page.url %} class="selected"{% endif %}>
                     <a href="{{ site.baseurl }}{{ item.url }}">
