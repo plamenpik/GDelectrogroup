@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 *, *:after, *:before {
     padding: 0;
     margin: 0;
@@ -5,17 +8,17 @@
 }
 
 html {
-    font-size: $font-size-desktop;
+    font-size: variables.$font-size-desktop;
     line-height: 1.5;
-    font-family: $font-family-content;
+    font-family: variables.$font-family-content;
     box-sizing: border-box; 
     
-    @include mq (desktop-large) {
-        font-size: $font-size-large;
+    @include mixins.mq (desktop-large) {
+        font-size: variables.$font-size-large;
     }
     
-    @include mq (mobile) {
-        font-size: $font-size-mobile;
+    @include mixins.mq (mobile) {
+        font-size: variables.$font-size-mobile;
     }
 }
 
@@ -25,7 +28,7 @@ body, table, form, select, option, input, textarea {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
-    font-family: $font-family-headings;
+    font-family: variables.$font-family-headings;
     margin-bottom: 0.5em;
     font-weight: normal;
 }

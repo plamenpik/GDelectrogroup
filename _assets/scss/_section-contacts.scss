@@ -1,9 +1,12 @@
+@use "mixins";
+@use "variables";
+
 .site-contacts {
   width: 90%;
   margin: 0 auto;
   
   & a {
-    color: $color-black;
+    color: variables.$color-black;
   }
   
   & header {
@@ -11,7 +14,7 @@
     padding: 4em 0 3em 0;
 
     &:after {
-      @include underline;
+      @include mixins.underline;
     }
   }
 
@@ -22,7 +25,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 
-    @include mq (tablet-big) {
+    @include mixins.mq (tablet-big) {
       grid-template-columns: repeat(1, 1fr);
       justify-items: center;
     }
@@ -36,12 +39,12 @@
         padding: 1.5em 0;
 
         &:before {
-          @include pseudo-inline;
+          @include mixins.pseudo-inline;
           padding-right: 1em;
           font-family: 'Font Awesome 5 Free';
           font-weight: bold;
           font-size: 1.5em;
-          color: $color-green;
+          color: variables.$color-green;
         }
 
         &:nth-child(1):before { content: '\f64f'; }
@@ -58,11 +61,11 @@
       width: 90%;
       height: 35em;
 
-      @include mq (phone) {
+      @include mixins.mq (phone) {
           height: 25em;            
       }
 
-      @include mq (phone-small) {
+      @include mixins.mq (phone-small) {
         height: 20em;            
       }
     }
@@ -74,7 +77,7 @@
     margin: 1rem auto 0;
     padding: 2rem 2rem 0;
 
-    @include mq (tablet) {
+    @include mixins.mq (tablet) {
       width: 100%;
     }
   
@@ -84,10 +87,10 @@
 
     input, 
     textarea {
-      border-radius: $sections-border-radius;
+      border-radius: variables.$sections-border-radius;
       border: none;
       outline: none;
-      box-shadow: 0 1px 1px rgba($color-black, 0.3);
+      box-shadow: 0 1px 1px rgba(variables.$color-black, 0.3);
       padding: 1.2rem;
       display: block;
       width: 100%;
@@ -122,7 +125,7 @@
       margin-right: 2%;
     }  
     
-    @include mq (phone) {
+    @include mixins.mq (phone) {
       .half {
         width: 100%;
       }

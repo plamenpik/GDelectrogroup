@@ -1,5 +1,8 @@
+@use "mixins";
+@use "variables";
+
 .site-header {
-    border-radius: $sections-border-radius; 
+    border-radius: variables.$sections-border-radius; 
     overflow: hidden;   
 
     #header-images {
@@ -8,7 +11,7 @@
         margin: 0 auto;
 
         &:before {
-            @include pseudo;
+            @include mixins.pseudo;
             padding-top: 40%;
             top: 0;
             left: 0;
@@ -26,13 +29,13 @@
         text-transform: uppercase;
         font-weight: 700;
         padding: 1.5em;
-        background: linear-gradient(0deg,rgba($color-purple, 0.6), rgba($color-purple, 0.6));
-        color: $color-white;
-        border-radius: $sections-border-radius; 
+        background: linear-gradient(0deg,rgba(variables.$color-purple, 0.6), rgba(variables.$color-purple, 0.6));
+        color: variables.$color-white;
+        border-radius: variables.$sections-border-radius; 
 
-        @include mq (laptop) {
+        @include mixins.mq (laptop) {
             &:hover {
-                background: linear-gradient(0deg,rgba($color-green, 0.6), rgba($color-green, 0.6));
+                background: linear-gradient(0deg,rgba(variables.$color-green, 0.6), rgba(variables.$color-green, 0.6));
                 padding: calc(1.5em + 3px);
             }
         }
@@ -41,31 +44,31 @@
     #switcher {
         width: 100%;
         margin: 0 auto;
-        background: linear-gradient(0deg,rgba($color-purple, 0.6), rgba($color-purple, 0.6));
+        background: linear-gradient(0deg,rgba(variables.$color-purple, 0.6), rgba(variables.$color-purple, 0.6));
         text-align: center;
         padding: 1em 0;
-        border-radius: $sections-border-radius; 
+        border-radius: variables.$sections-border-radius; 
 
         & a {
             padding: 0.5em 2em;
-            color: $color-white;
+            color: variables.$color-white;
 
-            @include mq (laptop) {
+            @include mixins.mq (laptop) {
                 &:hover {
-                    outline: 1px solid $color-white;
-                    color: $color-yellow;
+                    outline: 1px solid variables.$color-white;
+                    color: variables.$color-yellow;
                 }
             }
         }            
     }
 
-    .image-one > a:nth-child(1) { outline: 1px solid $color-white; }
-    .image-two > a:nth-child(2) { outline: 1px solid $color-white; }
-    .image-three > a:nth-child(3) { outline: 1px solid $color-white; }
+    .image-one > a:nth-child(1) { outline: 1px solid variables.$color-white; }
+    .image-two > a:nth-child(2) { outline: 1px solid variables.$color-white; }
+    .image-three > a:nth-child(3) { outline: 1px solid variables.$color-white; }
 
     .image-one {
         opacity: 0;
-        background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/lights.jpg')no-repeat center center;
+        background: linear-gradient(0deg,rgba(variables.$color-black, 0.65),rgba(variables.$color-black, 0.65)), url('../images/header-images/lights.jpg')no-repeat center center;
         background-size: cover; 
         animation: fadeIn 6s linear;
         animation-fill-mode: forwards;
@@ -74,7 +77,7 @@
 
     .image-two {
         opacity: 0;
-        background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/el.jpg')no-repeat center center;
+        background: linear-gradient(0deg,rgba(variables.$color-black, 0.65),rgba(variables.$color-black, 0.65)), url('../images/header-images/el.jpg')no-repeat center center;
         background-size: cover;
         animation: fadeIn 6s linear;
         animation-fill-mode: forwards;
@@ -83,7 +86,7 @@
 
     .image-three {
         opacity: 0;
-        background: linear-gradient(0deg,rgba($color-black, 0.65),rgba($color-black, 0.65)), url('../images/header-images/christmas.jpg')no-repeat center center;
+        background: linear-gradient(0deg,rgba(variables.$color-black, 0.65),rgba(variables.$color-black, 0.65)), url('../images/header-images/christmas.jpg')no-repeat center center;
         background-size: cover;
         animation: fadeIn 6s linear;
         animation-fill-mode: forwards;
@@ -105,7 +108,7 @@
         }
     }
 
-    @include mq (tablet) {
+    @include mixins.mq (tablet) {
         #header-text {
             padding: 0.8em;
 

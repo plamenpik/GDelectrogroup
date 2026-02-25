@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 .site-about {
     text-align: center;
     width: 90%;
@@ -10,7 +13,7 @@
             font-style: italic;
 
             &:after {
-                @include underline;
+                @include mixins.underline;
             }
         }
 
@@ -29,10 +32,10 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        border: 1px solid $color-gray;
+        border: 1px solid variables.$color-gray;
     }    
 
-    @include mq (phone) {
+    @include mixins.mq (phone) {
         .line {
             display: none;
         }
@@ -65,11 +68,11 @@
             }
 
             &:before {
-                @include pseudo-inline;
+                @include mixins.pseudo-inline;
                 width: 1.5em;
                 height: 1.5em;
                 border-radius: 50%;
-                background: $color-green;
+                background: variables.$color-green;
                 position: absolute;
                 transform: translate(150%, 25%);
             }
@@ -84,7 +87,7 @@
         }
     }
 
-    @include mq (phone) {
+    @include mixins.mq (phone) {
         .line {
             display: none;
         }
@@ -104,12 +107,12 @@
                     text-align: center;
                     padding-left: 0;
                     transform: translateX(0);
-                    border-bottom: 1px solid $color-green;
+                    border-bottom: 1px solid variables.$color-green;
                 }
 
                 &:nth-child(even) {
                     padding-right: 0;
-                    border-bottom: 1px solid $color-green;
+                    border-bottom: 1px solid variables.$color-green;
                 }
 
                 &:last-child {

@@ -1,18 +1,18 @@
-@import 'mixins';
-@import 'variables';
+@use 'mixins';
+@use 'variables';
 
-@import 'typography';
-@import 'buttons';
+@use 'typography';
+@use 'buttons';
 
-@import 'layout';
+@use 'layout';
 
-@import 'header';
-@import 'navigation';
-@import 'footer';
+@use 'header';
+@use 'navigation';
+@use 'footer';
 
-@import 'home-page';
-@import 'section-services';
-@import 'section-portfolio';
-@import 'section-about';
-@import 'section-team';
-@import 'section-contacts';
+@use 'home-page';
+@use 'section-services';
+@use 'section-portfolio';
+@use 'section-about';
+@use 'section-team';
+@use 'section-contacts';

@@ -1,5 +1,7 @@
+@use "variables";
+
 body {
-    background: $color-background;
+    background: variables.$color-background;
 }
 
 .site {

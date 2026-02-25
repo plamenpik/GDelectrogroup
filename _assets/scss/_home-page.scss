@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 .site-about-us {
     width: 90%;
     margin: 0 auto;
@@ -8,11 +11,11 @@
     }
 
     & li:before {
-        @include pseudo-inline;
+        @include mixins.pseudo-inline;
         content: '\f0a9';
         font-family: 'Font Awesome 5 Free';
         font-weight: bold;
-        color: $color-green;
+        color: variables.$color-green;
         padding-right: 0.5em;
        
     }
@@ -20,8 +23,8 @@
     & img {
         float: right;
         margin-left: 1em;
-        box-shadow: 0px 0px 10px 2px rgba($color-green, 0.85);
-        border-radius: $sections-border-radius;
+        box-shadow: 0px 0px 10px 2px rgba(variables.$color-green, 0.85);
+        border-radius: variables.$sections-border-radius;
     }
     
     & .image-left {

@@ -1,13 +1,16 @@
+@use "mixins";
+@use "variables";
+
 .site-footer {
     width: 95%;
     margin: 0 auto;
     padding-top: 0.5em;
     text-align: center;
-    color: $color-gray;
+    color: variables.$color-gray;
 
     &:before {
-        @include pseudo;
-        border-bottom: 1px solid $color-footer;
+        @include mixins.pseudo;
+        border-bottom: 1px solid variables.$color-footer;
         padding-top: 4.5em;
     }
 
@@ -24,12 +27,12 @@
     }
 
     .link:before {
-        @include pseudo-inline;
+        @include mixins.pseudo-inline;
         font-family: 'Font Awesome 5 Brands';
         font-weight: bold;
         font-size: 2.5em;
         padding: 0 1em 1em 0;
-        color: $color-footer;
+        color: variables.$color-footer;
         transform: translateX(25%);
     }
 
@@ -37,9 +40,9 @@
     .link.instagram:before { content: '\f16d'; }
     .link.pinterest:before { content: '\f0d2'; }
 
-    @include mq (laptop) {
-        .link.instagram:hover:before { color: $color-orange; } 
-        .link.facebook:hover:before { color: $color-light-blue; }
-        .link.pinterest:hover:before { color: $color-red ; }
+    @include mixins.mq (laptop) {
+        .link.instagram:hover:before { color: variables.$color-orange; } 
+        .link.facebook:hover:before { color: variables.$color-light-blue; }
+        .link.pinterest:hover:before { color: variables.$color-red ; }
     }
 }
