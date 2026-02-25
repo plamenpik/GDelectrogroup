@@ -12,7 +12,7 @@ function classChanger() {
 	}
 	setClass(classCount);
     classCount++;
-    setTimeout('classChanger()', 6000);
+    setTimeout(classChanger, 6000);
 }
 
 function switchImage(count) {
@@ -21,7 +21,7 @@ function switchImage(count) {
 }
 
 function setClass(number) {
-    headerImages.classList = classArray[number];
-	switcher.classList = classArray[number];
+    headerImages.className = classArray[number];
+    switcher.className = classArray[number];
 	headerText.textContent = textArray[number];
 }
