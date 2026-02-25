@@ -126,3 +126,92 @@
         }
     }
 }
+
+.portfolio-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(variables.$color-black, 0.92);
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+
+    &.is-open {
+        display: flex;
+    }
+
+    .portfolio-lightbox-figure {
+        margin: 0;
+        max-width: min(92vw, 1200px);
+        max-height: 92vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8em;
+    }
+
+    #portfolio-lightbox-image {
+        max-width: 100%;
+        max-height: calc(92vh - 5em);
+        width: auto;
+        height: auto;
+        border-radius: variables.$sections-border-radius;
+        box-shadow: 0px 0px 16px 2px rgba(variables.$color-black, 0.6);
+    }
+
+    #portfolio-lightbox-caption {
+        color: variables.$color-white;
+        font-style: italic;
+        text-align: center;
+        padding: 0 0.5em;
+    }
+
+    .portfolio-lightbox-close,
+    .portfolio-lightbox-prev,
+    .portfolio-lightbox-next {
+        border: 0;
+        color: variables.$color-white;
+        background: rgba(variables.$color-purple, 0.7);
+        cursor: pointer;
+        border-radius: variables.$sections-border-radius;
+        transition: background 0.2s ease-in-out;
+    }
+
+    .portfolio-lightbox-close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 2.2em;
+        height: 2.2em;
+        font-size: 1.4em;
+        line-height: 1;
+    }
+
+    .portfolio-lightbox-prev,
+    .portfolio-lightbox-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2.3em;
+        height: 2.3em;
+        font-size: 1.8em;
+        line-height: 1;
+    }
+
+    .portfolio-lightbox-prev {
+        left: 0.7em;
+    }
+
+    .portfolio-lightbox-next {
+        right: 0.7em;
+    }
+
+    @include mixins.mq (laptop) {
+        .portfolio-lightbox-close:hover,
+        .portfolio-lightbox-prev:hover,
+        .portfolio-lightbox-next:hover {
+            background: rgba(variables.$color-green, 0.9);
+        }
+    }
+}

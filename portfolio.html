@@ -325,11 +325,21 @@ gallery:
     <ul class="portfolio-gallery">
         {% for item in gallery %}
           <li class="image {{ item.size }}">
-            <a href="{{ site.baseurl }}/{{ item.file }}">
+            <a class="portfolio-image-link" href="{{ site.baseurl }}/{{ item.file }}">
               <img src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" alt="{{ item.caption }}" title="{{ item.caption }}">
               <strong>{{ item.caption }}</strong>
             </a>
           </li>
         {% endfor %}
     </ul>
+
+    <div id="portfolio-lightbox" class="portfolio-lightbox" aria-hidden="true">
+        <button type="button" class="portfolio-lightbox-close" aria-label="Затвори">×</button>
+        <button type="button" class="portfolio-lightbox-prev" aria-label="Предишна снимка">‹</button>
+        <figure class="portfolio-lightbox-figure">
+            <img id="portfolio-lightbox-image" src="" alt="">
+            <figcaption id="portfolio-lightbox-caption"></figcaption>
+        </figure>
+        <button type="button" class="portfolio-lightbox-next" aria-label="Следваща снимка">›</button>
+    </div>
 </section>
