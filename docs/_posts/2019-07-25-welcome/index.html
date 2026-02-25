@@ -26,7 +26,7 @@
 <link rel="canonical" href="https://gdelectrogroup.com/">
 </head>
 
-<body>
+<body onload="classChanger();">
     <div class="site">
         <input type="checkbox" id="toggle-nav" class="toggle-nav">
         <header class="site-header">
@@ -43,20 +43,19 @@
         
     </ul>
 </nav>
+            <div id="header-images">
+    <a href="/services/">
+        <span id="header-text"></span>
+    </a>
+    <div id="switcher">
+        <a href="javascript:switchImage(0)"><i class="fas fa-lightbulb"></i></a>
+        <a href="javascript:switchImage(1)"><i class="fas fa-bolt"></i></a>
+        <a href="javascript:switchImage(2)"><i class="far fa-star"></i></a>
+    </div>
+</div>
         </header>
             <main>
-                &lt;section class=&quot;site-portfolio&quot;&gt;
-    &lt;header&gt;
-        &lt;h2&gt;Портфолио&lt;/h2&gt;
-        &lt;p&gt;Разгледайте нашата визитка в снимки и видео по долу&lt;/p&gt;
-    &lt;/header&gt;
-    &lt;ul class=&quot;portfolio-gallery&quot;&gt;
-      
-    &lt;/ul&gt;
-    &lt;ul class=&quot;portfolio-gallery&quot;&gt;
-        
-    &lt;/ul&gt;
-&lt;/section&gt;
+                
             </main>        
         <footer class="site-footer">
             <p>© 2018 - 2026 - G&amp;D electro group - All Rights Reserved | Design by Plamen Kinov</p>
@@ -68,6 +67,7 @@
 
         </footer>
     </div>
+    
 </body>
 
 </html>

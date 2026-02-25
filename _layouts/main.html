@@ -2,21 +2,21 @@
 <html lang="bg">
 
 <head>
-    {% include head.html %}
+    {% include "head.html" %}
 </head>
 
 <body onload="classChanger();">
     <div class="site">
         <input type="checkbox" id="toggle-nav" class="toggle-nav">
         <header class="site-header">
-            {% include navigation.html %}
-            {% include header.html %}
+            {% include "navigation.html" %}
+            {% include "header.html" %}
         </header>
             <main>
                 {{ content }}
             </main>        
         <footer class="site-footer">
-            {% include footer.html %}
+            {% include "footer.html" %}
         </footer>
     </div>
     {% if page.layout == 'main' %}

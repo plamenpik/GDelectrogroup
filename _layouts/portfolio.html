@@ -2,20 +2,20 @@
 <html lang="bg">
 
 <head>
-    {% include head.html %}
+    {% include "head.html" %}
 </head>
 
 <body>
     <div class="site">
         <input type="checkbox" id="toggle-nav" class="toggle-nav">
         <header class="site-header">
-            {% include navigation.html %}
+            {% include "navigation.html" %}
         </header>
             <main>
-                {{content}}
+                {{ content }}
             </main>        
         <footer class="site-footer">
-            {% include footer.html %}
+            {% include "footer.html" %}
         </footer>
     </div>
 </body>
