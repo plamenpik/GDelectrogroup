@@ -15,7 +15,8 @@
 {% if page.url == '/404/' or page.url == '/README/' or '/_posts/' in page.url %}
 <meta name="robots" content="noindex, follow">
 {% endif %}
-<meta name="description" content="G&D Electro Group предлага висококачествени електроуслуги за частни, комерсиални и промишлени клиенти. Нашият екип от опитни електротехници предлага широк спектър от услуги, включително инсталиране, ремонт и поддръжка. Свържете се с нас днес.">
+{% set metaDescription = description or page.description or "G&D Electro Group предлага висококачествени електроуслуги за частни, комерсиални и промишлени клиенти. Нашият екип от опитни електротехници предлага широк спектър от услуги, включително инсталиране, ремонт и поддръжка. Свържете се с нас днес." %}
+<meta name="description" content="{{ metaDescription }}">
 <meta property="og:locale" content="bg_BG">
 <meta property="og:site_name" content="{{ site.title }}">
 <title>
@@ -34,7 +35,7 @@
 <link rel="canonical" href="{{ site.url }}{{ page.url | default('/') }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="G&D Electro Group предлага висококачествени електроуслуги за частни, комерсиални и промишлени клиенти. Нашият екип от опитни електротехници предлага широк спектър от услуги, включително инсталиране, ремонт и поддръжка. Свържете се с нас днес.">
+<meta property="og:description" content="{{ metaDescription }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url | default('/') }}">
 <meta property="og:image" content="{{ site.url }}/images/home-images/home-page-1.jpg">
 <script type="application/ld+json">
