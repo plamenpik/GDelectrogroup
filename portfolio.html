@@ -326,7 +326,7 @@ gallery:
         {% for item in gallery %}
           <li class="image {{ item.size }}">
             <a href="{{ site.baseurl }}/{{ item.file }}">
-              <img src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" alt="Portfolio picture" title="Picture form our portfolio">
+              <img src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" alt="{{ item.caption }}" title="{{ item.caption }}">
               <strong>{{ item.caption }}</strong>
             </a>
           </li>

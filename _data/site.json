@@ -5,7 +5,13 @@
   "phone2": "+359 89 703 6622",
   "description": "Професионална електромонтажна група.",
   "baseurl": "",
-  "url": "",
+  "url": "https://gdelectrogroup.com",
+  "address": {
+    "street": "бул. Цар Освободител 109А, Офис 23",
+    "city": "Варна",
+    "postalCode": "9000",
+    "country": "BG"
+  },
   "facebook_username": "GDelectrogroup",
   "instagram_username": "gdelectrogroup"
 }

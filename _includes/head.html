@@ -10,15 +10,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% if page.url == '/404/' %}
+<meta name="robots" content="noindex, follow">
+{% endif %}
 <meta name="description" content="G&D Electro Group предлага висококачествени електроуслуги за частни, комерсиални и промишлени клиенти. Нашият екип от опитни електротехници предлага широк спектър от услуги, включително инсталиране, ремонт и поддръжка. Свържете се с нас днес.">
+<meta property="og:locale" content="bg_BG">
+<meta property="og:site_name" content="{{ site.title }}">
 <title>
-    {% if page.title %}
-    {{page.title}}
+  {% if title %}
+  {{ title }}
     {% else %}
-    {{site.title}}
+  {{ site.title }}
     {% endif %}
 </title>
 <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
-<link rel="canonical" href="https://gdelectrogroup.com/">
+<link rel="canonical" href="{{ site.url }}{{ page.url | default('/') }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="G&D Electro Group предлага висококачествени електроуслуги за частни, комерсиални и промишлени клиенти. Нашият екип от опитни електротехници предлага широк спектър от услуги, включително инсталиране, ремонт и поддръжка. Свържете се с нас днес.">
+<meta property="og:url" content="{{ site.url }}{{ page.url | default('/') }}">
+<meta property="og:image" content="{{ site.url }}/images/home-images/home-page-1.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "url": "{{ site.url }}",
+  "image": "{{ site.url }}/images/site-logo.jpg",
+  "telephone": "{{ site.phone }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.address.street }}",
+    "addressLocality": "{{ site.address.city }}",
+    "postalCode": "{{ site.address.postalCode }}",
+    "addressCountry": "{{ site.address.country }}"
+  },
+  "sameAs": [
+    "https://www.facebook.com/{{ site.facebook_username }}/",
+    "https://www.instagram.com/{{ site.instagram_username }}/"
+  ]
+}
+</script>
