@@ -1,0 +1,17 @@
+# Ignore node_modules, gulpfile, and other non-template files
+node_modules/
+gulpfile.js
+package.json
+package-lock.json
+.stylelintrc.json
+.prettierrc.json
+Gemfile
+Gemfile.lock
+README.md
+
+# Also ignore the SASS source files, as they are processed separately
+_assets/
+scripts/
+
+# The config file itself
+eleventy.config.js
