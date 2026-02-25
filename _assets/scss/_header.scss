@@ -49,9 +49,14 @@
         padding: 1em 0;
         border-radius: variables.$sections-border-radius; 
 
-        & a {
+        & a,
+        & .switcher-btn {
             padding: 0.5em 2em;
             color: variables.$color-white;
+            border: 0;
+            background: transparent;
+            font: inherit;
+            cursor: pointer;
 
             @include mixins.mq (laptop) {
                 &:hover {
@@ -62,9 +67,9 @@
         }            
     }
 
-    .image-one > a:nth-child(1) { outline: 1px solid variables.$color-white; }
-    .image-two > a:nth-child(2) { outline: 1px solid variables.$color-white; }
-    .image-three > a:nth-child(3) { outline: 1px solid variables.$color-white; }
+    .image-one > *:nth-child(1) { outline: 1px solid variables.$color-white; }
+    .image-two > *:nth-child(2) { outline: 1px solid variables.$color-white; }
+    .image-three > *:nth-child(3) { outline: 1px solid variables.$color-white; }
 
     .image-one {
         opacity: 0;
