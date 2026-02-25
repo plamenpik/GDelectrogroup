@@ -17,6 +17,14 @@
     margin-top: 1.5em;
 }
 
+@mixin portfolio-button-cursor {
+    @include mq (laptop) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
 @mixin mq($point) {
 
     @if $point == desktop-large {

@@ -523,6 +523,19 @@ body {
   border: 1px solid #7A7A7A;
   margin-top: 1.5em;
 }
+.site-portfolio header .portfolio-videos-link {
+  margin-top: 1.2em;
+}
+@media (min-width: 1025px) {
+  .site-portfolio header .portfolio-videos-link .button:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .site-portfolio header .portfolio-videos-link .button {
+    visibility: visible;
+  }
+}
 @media (max-width: 800px) {
   .site-portfolio {
     margin-top: 3em;
@@ -627,6 +640,64 @@ body {
   .site-portfolio .portfolio-gallery {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+  }
+}
+
+.portfolio-videos {
+  width: 90%;
+  margin: 10em auto 0;
+}
+.portfolio-videos header {
+  text-align: center;
+}
+.portfolio-videos header p {
+  font-style: italic;
+}
+.portfolio-videos .portfolio-videos-back {
+  margin-top: 1em;
+}
+@media (min-width: 1025px) {
+  .portfolio-videos .portfolio-videos-back .button:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .portfolio-videos .portfolio-videos-back .button {
+    visibility: visible;
+  }
+}
+.portfolio-videos .portfolio-videos-list {
+  margin: 2em 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4em;
+}
+.portfolio-videos .portfolio-video-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.3em;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.35);
+  padding: 1em;
+}
+.portfolio-videos .portfolio-video-item h3 {
+  margin-top: 0;
+}
+.portfolio-videos .portfolio-video-item video {
+  width: 100%;
+  border-radius: 0.3em;
+  margin: 0.5em 0 0.8em;
+  background: #000000;
+}
+.portfolio-videos .portfolio-video-item p {
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .portfolio-videos {
+    margin-top: 3em;
+  }
+  .portfolio-videos .portfolio-videos-list {
+    grid-template-columns: 1fr;
   }
 }
 

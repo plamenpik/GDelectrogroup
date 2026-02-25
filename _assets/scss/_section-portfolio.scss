@@ -15,6 +15,18 @@
                 @include mixins.underline;
             }
         }
+
+        .portfolio-videos-link {
+            margin-top: 1.2em;
+
+            .button {
+                @include mixins.portfolio-button-cursor;
+
+                @include mixins.mq (mobile) {
+                    visibility: visible;
+                }
+            }
+        }
     }
 
     @include mixins.mq (tablet) {
@@ -123,6 +135,70 @@
         @include mixins.mq (tablet) {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1em;
+        }
+    }
+}
+
+.portfolio-videos {
+    width: 90%;
+    margin: 10em auto 0;
+
+    header {
+        text-align: center;
+
+        p {
+            font-style: italic;
+        }
+    }
+
+    .portfolio-videos-back {
+        margin-top: 1em;
+
+        .button {
+            @include mixins.portfolio-button-cursor;
+
+            @include mixins.mq (mobile) {
+                visibility: visible;
+            }
+        }
+    }
+
+    .portfolio-videos-list {
+        margin: 2em 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.4em;
+    }
+
+    .portfolio-video-item {
+        background: rgba(variables.$color-white, 0.08);
+        border-radius: variables.$sections-border-radius;
+        box-shadow: 0px 0px 10px 4px rgba(variables.$color-black, 0.35);
+        padding: 1em;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        video {
+            width: 100%;
+            border-radius: variables.$sections-border-radius;
+            margin: 0.5em 0 0.8em;
+            background: variables.$color-black;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    @include mixins.mq (tablet) {
+        margin-top: 3em;
+
+        .portfolio-videos-list {
+            grid-template-columns: 1fr;
         }
     }
 }

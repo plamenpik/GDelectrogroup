@@ -4,10 +4,6 @@ pagename: Портфолио
 layout: portfolio
 permalink: /portfolio/
 order: 2
-video:
-  - caption: Делта Планет Мол Варна коледна декорация видео
-    file: images/portfolio-images/1.mp4
-    size: big
 gallery:
   - caption: Коледна декорация
     file: images/portfolio-images/99.jpg
@@ -311,17 +307,10 @@ gallery:
     <header>
         <h2>Портфолио</h2>
         <p>Разгледайте нашата визитка в снимки и видео по долу</p>
+        <p class="portfolio-videos-link">
+            <a class="button" href="{{ site.baseurl }}/portfolio/videos/">Видео портфолио</a>
+        </p>
     </header>
-    <ul class="portfolio-gallery">
-      {% for item in video %}
-        <li class="image {{ item.size }}">
-          <a href="{{ site.baseurl }}/{{ item.file }}">
-            <video src="{{ site.baseurl }}/{{ item.file }}" loading="lazy" type="video/mp4"></video>
-            <strong>{{ item.caption }}</strong>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
     <ul class="portfolio-gallery">
         {% for item in gallery %}
           <li class="image {{ item.size }}">

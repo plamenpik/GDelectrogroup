@@ -1,0 +1,29 @@
+---
+title: Видео портфолио | G&D electro group
+layout: portfolio
+permalink: /portfolio/videos/
+videos:
+  - title: Делта Планет Мол Варна коледна декорация
+    file: images/portfolio-images/1.mp4
+    description: Видео от реализация на коледна декорация в Делта Планет Мол Варна.
+---
+
+<section class="portfolio-videos">
+    <header>
+        <h2>Видео портфолио</h2>
+        <p>Тук публикуваме видео реализации на наши проекти. Страницата е подготвена за добавяне на бъдещи видеа.</p>
+        <p class="portfolio-videos-back"><a class="button" href="{{ site.baseurl }}/portfolio/">Назад към снимките</a></p>
+    </header>
+
+    <ul class="portfolio-videos-list">
+        {% for item in videos %}
+        <li class="portfolio-video-item">
+            <h3>{{ item.title }}</h3>
+            <video controls preload="metadata" playsinline>
+                <source src="{{ site.baseurl }}/{{ item.file }}" type="video/mp4">
+            </video>
+            <p>{{ item.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
