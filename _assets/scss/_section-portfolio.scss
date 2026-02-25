@@ -72,9 +72,16 @@
                 & strong {
                     width: 80%;
                     margin: 0 auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    text-align: center;
+                    font-style: italic;
                     color: variables.$color-background;
-                    transform: translate(100%, 100%);
-                    transition: transform 0.4s ease-in-out;
+                    transform: translate(60%, -50%);
+                    opacity: 0;
+                    z-index: 3;
+                    transition: transform 0.4s ease-in-out, opacity 0.25s ease-in-out;
                 }
 
                 @include mixins.mq (laptop) {
@@ -87,14 +94,9 @@
                     }                
                 
                     &:hover strong {
-                        text-align: center;
-                        font-style: italic;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
                         transform: translate(-50%, -50%);
-                        z-index: 3;
                         color: variables.$color-white;
+                        opacity: 1;
                     }
                 }
             }

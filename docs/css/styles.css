@@ -580,9 +580,16 @@ body {
 .site-portfolio .portfolio-gallery li > a strong {
   width: 80%;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-style: italic;
   color: #E4E4E4;
-  transform: translate(100%, 100%);
-  transition: transform 0.4s ease-in-out;
+  transform: translate(60%, -50%);
+  opacity: 0;
+  z-index: 3;
+  transition: transform 0.4s ease-in-out, opacity 0.25s ease-in-out;
 }
 @media (min-width: 1025px) {
   .site-portfolio .portfolio-gallery li > a:hover:before {
@@ -597,14 +604,9 @@ body {
     bottom: 0;
   }
   .site-portfolio .portfolio-gallery li > a:hover strong {
-    text-align: center;
-    font-style: italic;
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
     color: #FFFFFF;
+    opacity: 1;
   }
 }
 @media (min-width: 1025px) {
